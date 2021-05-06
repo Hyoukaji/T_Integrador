@@ -1,2 +1,2 @@
 # T_Integrador
-Trabajo Integrador para AyED, Informatica UNLP
+Trabajo Integrador para seminario de python, Informatica UNLP
