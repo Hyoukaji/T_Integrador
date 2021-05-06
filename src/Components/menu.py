@@ -17,4 +17,14 @@ def loop():
             break
         print (event)
         print (values)
+        #if event == "-play-":
+            #window.hide()
+        #if event == "-login/register-":
+            #window.hide()
+        #if event == "-settings-":
+            #window.hide()
+        #if event == "-score-":
+            #window.hide()
+        #if event == "-stats-":
+            #window.hide()
     return window
