@@ -3,8 +3,10 @@ import PySimpleGUI as sg
 def build():
     layout = [
         [sg.Button("play",size=(50,2), key="-play-")],
+        [sg.Button("login/register",size=(50,2), key="-login/register-")],
         [sg.Button("settings",size=(50,2), key="-settings-")],
         [sg.Button("score",size=(50,2), key="-score-")],
+        [sg.Button("stats",size=(50,2), key="-stats-")],
         [sg.Button('Exit',size=(50,2), key="-exit-")]
     ]
 
