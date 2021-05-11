@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import menu
+from src.Components import board
 #Menu de components
 def start():
     #Aca se ejecuta la ventana del menu
@@ -17,14 +18,20 @@ def loop():
             break
         print (event)
         print (values)
-        #if event == "-play-":
-            #window.hide()
+        if event == "-play-":
+            window.hide()
+            board.start()
+            window.un_hide()
         #if event == "-login/register-":
             #window.hide()
+            #window.un_hide()
         #if event == "-settings-":
             #window.hide()
+            #window.un_hide()
         #if event == "-score-":
             #window.hide()
+            #window.un_hide()
         #if event == "-stats-":
             #window.hide()
+            #window.un_hide()
     return window
