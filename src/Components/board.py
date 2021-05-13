@@ -8,13 +8,13 @@ def start():
     window.close()
 
 def loop():
-    #Loop para captar eventos del tablero, y le damos el/los jugador/es
-    window = board.build("jugador 1", "jugador 2")
+    #Loop para captar eventos del tablero, y le damos el jugador
+    window = board.build("jugador 1")
 
     while True:
         event, _values = window.read()
 
-        if event in (sg.WINDOW_CLOSED, "Exit", "-exit-"):
+        if event in (sg.WINDOW_CLOSED, "-exit-"):
             break
 
         if event.startswith("cell"):

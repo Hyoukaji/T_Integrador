@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-#Creador de ventanas
+#Creador de ventana menu
 def build():
     layout = [
         [sg.Button("play",size=(50,2), key="-play-")],
