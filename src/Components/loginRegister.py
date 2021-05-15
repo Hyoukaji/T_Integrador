@@ -23,9 +23,11 @@ def loop():
             window.hide()
             login.start()
             window.un_hide()
+            break
         if event == "-register-":
             window.hide()
             register.start()
             window.un_hide()
+            break
 
     return window

@@ -10,6 +10,7 @@ def start():
     window.close()
 
 def loop():
+    ok = False
     t = "Register"
     tx = "Introduzca un nick que no se haya registrado"
     b = "Buscar"

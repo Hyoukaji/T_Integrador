@@ -11,7 +11,7 @@ def loop():
     t = "Edad"
     tx = "Introduzca su edad"
     b = "Actualizar"
-    window = introduzca_texto.build(tx, t, b)
+    window = introduzca_texto.build(tx, b, t)
 
     while True:
         event, values = window.read()
@@ -23,4 +23,5 @@ def loop():
             #INTRODUCIR EXCEPCION POR STRING QUE PUEDA ENTRAR, QUEREMOS INTS!!!
             x = int(text_input)
             sg.popup('You entered', text_input)
+            break
     return window
