@@ -21,8 +21,11 @@ def loop():
 
         if event == "-update-":
             text_input = values[0]
-            #INTRODUCIR EXCEPCION POR STRING QUE PUEDA ENTRAR, QUEREMOS INTS!!!
-            x = int(text_input)
-            sg.popup('You entered', text_input)
+            try:
+                x = int(text_input)
+                sg.popup('You entered', text_input)
+                break
+            except:
+                sg.popup("Tienes que ingresar un número entero")
 
     return window

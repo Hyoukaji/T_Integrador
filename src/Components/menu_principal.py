@@ -12,6 +12,7 @@ def start():
     window.close()
 
 def loop():
+    okp = True
     #Loop para captar eventos
     window = menu.build()
 
@@ -23,9 +24,12 @@ def loop():
         print (event)
         print (values)
         if event == "-play-":
-            window.hide()
-            board.start()
-            window.un_hide()
+            if okp :
+                window.hide()
+                board.start()
+                window.un_hide()
+            else:
+                sg.popup("Tienes que estar logueado para jugar")
         if event == "-login/register-":
             window.hide()
             loginRegister.start()

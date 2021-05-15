@@ -8,8 +8,8 @@ def start():
     window.close()
 
 def loop():
-    t = "Matchs"
-    tx = "Introduzca un número de coincidencias"
+    t = "Tiempo de Juego"
+    tx = "Introduzca un número para actualizar el tiempo de partida"
     b = "Actualizar"
     window = introduzca_texto.build(tx, b, t)
 

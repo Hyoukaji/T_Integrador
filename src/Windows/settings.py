@@ -3,6 +3,7 @@ import PySimpleGUI as sg
 def build():
     layout = [
         [sg.Button("Ayudas",size=(50,2), key="-ayudas-")],
+        [sg.Button("Tiempo Limite",size=(50,2), key="-timing-")],
         [sg.Button("Casillas x nivel",size=(50,2), key="-casillas-")],
         [sg.Button("Coincidencias",size=(50,2), key="-matchs-")],
         [sg.Button("Criterio",size=(50,2), key="-criterio-")],

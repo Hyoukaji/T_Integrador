@@ -29,5 +29,6 @@ def loop():
             if ok:
                 edad.start()
                 genero.start()
+                sg.popup("Para continuar te sugerimos que configures tu usuario, de lo contrario quedara todo en default")
             break
     return window

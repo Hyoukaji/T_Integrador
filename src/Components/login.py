@@ -21,6 +21,6 @@ def loop():
 
         if event == "-update-":
             text_input = values[0]
-            sg.popup('You entered', text_input)
+            sg.popup('Bienvenido:', text_input)
             break
     return window
