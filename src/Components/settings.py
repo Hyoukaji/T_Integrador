@@ -9,7 +9,6 @@ from src.Components import ayudas
 #Abrimos el la ventana para configurar al jugador
 
 def start():
-
     window = loop()
     window.close()
 

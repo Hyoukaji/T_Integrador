@@ -1,15 +1,17 @@
 import PySimpleGUI as sg
-from src.Windows import colores
+from src.Windows import a_b
 #Abrimos el la ventana para configurar al jugador
 
 def start():
 
-    window = loop()
+    window, color = loop()
     window.close()
-
+    #INSERTE AQUI EL HANDLER MODIFICADOR
+    if (color != "ninguno"):
+        sg.theme(color)
 def loop():
-
-    window = colores.build()
+    color = "ninguno"
+    window = a_b.build("Set color 1", "Set color 2","Selección de color")
 
     while True:
         event, _values = window.read()
@@ -17,13 +19,13 @@ def loop():
         if event in (sg.WINDOW_CLOSED, "-exit-"):
             break
 
-        if event == "-color1-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
-        if event == "-color2-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
+        if event == "-a-":
+            color = "DarkPurple2"
+            sg.popup('You entered', color)
+            break
+        if event == "-b-":
+            color = "DarkBrown4"
+            sg.popup('You entered', color)
+            break
 
-    return window
+    return window, color

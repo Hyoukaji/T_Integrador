@@ -11,7 +11,7 @@ def loop():
     t = "Login"
     tx = "Introduzca un nick existente"
     b = "Buscar"
-    window = introduzca_texto.build(tx, t, b)
+    window = introduzca_texto.build(tx, b, t)
 
     while True:
         event, values = window.read()

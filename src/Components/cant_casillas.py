@@ -11,7 +11,7 @@ def loop():
     t = "Cantidad de casillas"
     tx = "Introduzca un número para elevarlo al cuadrado y crear el tablero"
     b = "Actualizar"
-    window = introduzca_texto.build(tx, t, b)
+    window = introduzca_texto.build(tx, b, t)
 
     while True:
         event, values = window.read()

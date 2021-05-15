@@ -1,4 +1,4 @@
-from src import Memoria
+from src import mem_py
 #Poner aca razon para poner main, que no recuerdo....
 if __name__ == "__main__":
-    Memoria.start()
+    mem_py.start()

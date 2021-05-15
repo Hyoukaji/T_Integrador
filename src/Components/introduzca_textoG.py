@@ -13,7 +13,7 @@ def loop():
     t = "Texto in game"
     tx = "Introduzca un texto para actualizar"
     b = "Actualizar"
-    window = introduzca_texto.build(tx, t, b)
+    window = introduzca_texto.build(tx, b, t)
 
     while True:
         event, values = window.read()

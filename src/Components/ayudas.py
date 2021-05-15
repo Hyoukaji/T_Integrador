@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from src.Windows import ayudas
+from src.Windows import a_b
 #Abrimos el la ventana para configurar al jugador
 
 def start():
@@ -9,7 +9,7 @@ def start():
 
 def loop():
 
-    window = ayudas.build()
+    window = a_b.build("Con Ayudas","Sin Ayudas","Ayudas")
 
     while True:
         event, _values = window.read()

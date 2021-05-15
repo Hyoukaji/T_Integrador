@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from src.Windows import criterio
+from src.Windows import a_b
 #Abrimos el la ventana para configurar al jugador
 
 def start():
@@ -9,7 +9,7 @@ def start():
 
 def loop():
 
-    window = criterio.build()
+    window = a_b.build("Set criterio 1","Set criterio 2", "Selección de Criterios")
 
     while True:
         event, _values = window.read()
@@ -17,11 +17,11 @@ def loop():
         if event in (sg.WINDOW_CLOSED, "-exit-"):
             break
 
-        if event == "-criterio1-":
+        if event == "-a-":
             window.hide()
             #texto_in_game.start()
             window.un_hide()
-        if event == "-criterio2-":
+        if event == "-b-":
             window.hide()
             #texto_in_game.start()
             window.un_hide()

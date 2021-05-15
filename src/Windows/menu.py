@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-#Creador de ventana menu
+#Creador de ventana menu principal
 def build():
     layout = [
         [sg.Button("Play",size=(50,2), key="-play-")],
@@ -10,6 +10,6 @@ def build():
         [sg.Button('Exit',size=(50,2), key="-exit-")]
     ]
 
-    board = sg.Window("Juego de la memoria").Layout(layout)
+    board = sg.Window("Juego de la memoria: Menu Principal").Layout(layout)
 
     return board

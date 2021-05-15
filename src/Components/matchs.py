@@ -11,7 +11,7 @@ def loop():
     t = "Matchs"
     tx = "Introduzca un número de coincidencias"
     b = "Actualizar"
-    window = introduzca_texto.build(tx, t, b)
+    window = introduzca_texto.build(tx, b, t)
 
     while True:
         event, values = window.read()

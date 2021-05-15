@@ -3,10 +3,10 @@ from src.Windows import menu
 from src.Components import board
 from src.Components import loginRegister
 from src.Components import settings
+from src.Components import inicio_sesion
 #Menu de components
 def start():
-    loginRegister.start()
-    settings.start()
+    inicio_sesion.start()
     #Aca se ejecuta la ventana del menu
     window = loop()
     window.close()
