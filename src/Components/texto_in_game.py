@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import texto_in_game
-from src.Components import introduzca_texto
+from src.Components import introduzca_textoG
 #Abrimos la ventana para cambiar los textos del juego
 
 def start():
@@ -19,13 +19,13 @@ def loop():
             break
 
         if event == "-ganar-":
-            text_input = introduzca_texto.start()
+            text_input = introduzca_textoG.start()
             sg.popup('You entered', text_input)
         if event == "-perder-":
-            text_input = introduzca_texto.start()
+            text_input = introduzca_textoG.start()
             sg.popup('You entered', text_input)
         if event == "-pocoT-":
-            text_input = introduzca_texto.start()
+            text_input = introduzca_textoG.start()
             sg.popup('You entered', text_input)
 
     return window

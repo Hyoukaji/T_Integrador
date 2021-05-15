@@ -11,7 +11,8 @@ def start():
 def loop():
     t = "Texto in game"
     tx = "Introduzca un texto para actualizar"
-    window = introduzca_texto.build(tx, t)
+    b = "Actualizar"
+    window = introduzca_texto.build(tx, t, b)
 
     while True:
         event, values = window.read()
