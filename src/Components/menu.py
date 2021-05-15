@@ -6,6 +6,7 @@ from src.Components import settings
 #Menu de components
 def start():
     loginRegister.start()
+    settings.start()
     #Aca se ejecuta la ventana del menu
     window = loop()
     window.close()

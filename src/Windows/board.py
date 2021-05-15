@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 #Creador de tableros
 
-def build(player1_name):
+def build(player1_name, board_data):
     layout = [
         [sg.Text("Jugador1: " + player1_name, key="-P1-", text_color="Red")],
         [sg.Text("Elementos encontrados: " + "x", key="-elem-", text_color="Blue")],
