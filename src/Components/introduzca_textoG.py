@@ -9,6 +9,7 @@ def start():
     return x
 
 def loop():
+    x = " "
     t = "Texto in game"
     tx = "Introduzca un texto para actualizar"
     b = "Actualizar"

@@ -5,7 +5,7 @@ def start(tipo, info, x, y, z):
     equipo = x
     cant_match = z
     mask = "?"
-    board_data = [casilla, criterio, equipo, mask, cant_match]
+    board_data = [casilla, criterio, equipo, cant_match, mask]
     matriz = [[board_data] * y for _i in range(y)]
 
     return matriz
