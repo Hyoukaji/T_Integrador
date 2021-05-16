@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
-#from src.Handlers import set_matchs
+from src.Handlers import set_matchs
 
 #Abrimos la ventana para cambiar los textos del juego
 
@@ -25,7 +25,7 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                #set_matchs.start(x)
+                set_matchs.start(x)
                 sg.popup("Seteaste la cantidad de coincidencias en :" + x)
                 break
             except:

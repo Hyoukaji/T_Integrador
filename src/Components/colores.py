@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import a_b
-#from src.Handlers import set_color
+from src.Handlers import set_color
 #Abrimos el la ventana para configurar al jugador
 
 def start():
@@ -19,12 +19,12 @@ def loop():
 
         if event == "-a-":
             color = "DarkPurple2"
-            #set_color.start(color)
+            set_color.start(color)
             sg.popup('Seteaste el color en:', color)
             break
         if event == "-b-":
             color = "DarkBrown4"
-            #set_color.start(color)
+            set_color.start(color)
             sg.popup('Seteaste el color en:', color)
             break
 

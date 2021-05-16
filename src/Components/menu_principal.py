@@ -5,7 +5,7 @@ from src.Components import login_register
 from src.Components import settings
 from src.Components import inicio_sesion
 from src.Handlers import colorear
-#from src.Handlers import actualizar_jugador
+from src.Handlers import actualizar_jugador
 
 def start():
     ok = False
@@ -25,7 +25,7 @@ def loop(okp):
 
         if event in (sg.WINDOW_CLOSED, "-exit-"):
             if okp:
-                #actualizar_jugador.start()
+                actualizar_jugador.start()
             break
 
         if event == "-play-":
