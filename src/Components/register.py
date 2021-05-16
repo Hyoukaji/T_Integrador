@@ -43,6 +43,9 @@ def loop(oks):
                 ok = True
                 break
             #else:
-                sg.popup("No se encuetra disponible ese nick, introduce otro")
+                if not verifica:
+                    sg.popup("El archivo que guarda los jugadores no existe")
+                else:
+                    sg.popup("No se encuetra disponible ese nick, introduce otro")
 
     return window, ok

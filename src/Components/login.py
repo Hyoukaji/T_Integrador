@@ -28,7 +28,7 @@ def loop(oks):
 
         if event == "-update-":
             text_input = values[0]
-            #encuentra, _verifica= buscar_jugador.start(text_input)
+            #encuentra, verifica= buscar_jugador.start(text_input)
             #if encuentra:
                 #jugador = get_jugador.start(text_input)
                 #set_jugador_actual.start(jugador)
@@ -36,6 +36,9 @@ def loop(oks):
                 ok = True
                 break
             #else:
-                sg.popup("No se pudo encontrar ese nick")
+                if not verifica:
+                    sg.popup("El archivo que guarda los jugadores no existe")
+                else:
+                    sg.popup("No se pudo encontrar ese nick")
 
     return window, ok

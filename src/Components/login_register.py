@@ -6,7 +6,7 @@ from src.Components import register
 #Abrimos la ventana para logearse o regristrarse
 
 def start(oks):
-    #if ok:
+    #if oks:
         #actualizar_jugador.start()
     window, ok= loop(oks)
     window.close()
