@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[35]:
+# In[4]:
 
 
 from json import JSONEncoder
@@ -21,7 +21,10 @@ class Jugador():
         self.cantidadCoin = 2
         self.elemento_casilla = 0 #niIdeaQueEsEsto
         self.ayuda = False
-        self.color = 1
+        self.color = "ninguno"
+        self.text_ganar = "Ganaste"
+        self.text_perder ="Perdiste"
+        self.text_pocoT = "Te queda poco tiempo D:"
         
     def set_nick(self, unNick):
         self._nick += unNick
@@ -56,7 +59,7 @@ class JugadorEncoder(JSONEncoder):
     
     def default(self, o):
         return o.__dict__
-        
+    
 
 
 # In[ ]:
