@@ -14,6 +14,7 @@ def start(oks):
 def loop(oks):
     ok = oks
     #encuentra = False
+    #verifica = True
     t = "Login"
     tx = "Introduzca un nick existente"
     b = "Buscar"
@@ -27,7 +28,7 @@ def loop(oks):
 
         if event == "-update-":
             text_input = values[0]
-            #encuentra = buscar_jugador.start(text_input)
+            #encuentra, _verifica= buscar_jugador.start(text_input)
             #if encuentra:
                 #jugador = get_jugador.start(text_input)
                 #set_jugador_actual.start(jugador)

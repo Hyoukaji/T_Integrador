@@ -16,6 +16,7 @@ def start(oks):
     return ok
 def loop(oks):
     ok = oks
+    #verifica = True
     #encuentra = True
     t = "Register"
     tx = "Introduzca un nick que no se haya registrado"
@@ -30,8 +31,8 @@ def loop(oks):
 
         if event == "-update-":
             text_input = values[0]
-            #encuentra = buscar_jugador.start(text_input)
-            #if not encuentra:
+            #encuentra, verifica= buscar_jugador.start(text_input)
+            #if (not encuentra) && (verifica):
                 e = edad.start()
                 g = genero.start()
                 #crear_jugador.start(e,g,text_input)
