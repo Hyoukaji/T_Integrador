@@ -1,13 +1,19 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
+#from src.Handlers import buscar_jugador
+#from src.Handlers import set_jugador_actual
+#from src.Handlers import get_jugador
+#from src.Archivos import jugador
 #Abrimos la ventana para logearse
 
-def start():
+def start(oks):
 
-    window = loop()
+    window, ok= loop(oks)
     window.close()
-
-def loop():
+    return ok
+def loop(oks):
+    ok = oks
+    #encuentra = False
     t = "Login"
     tx = "Introduzca un nick existente"
     b = "Buscar"
@@ -21,6 +27,14 @@ def loop():
 
         if event == "-update-":
             text_input = values[0]
-            sg.popup('Bienvenido:', text_input)
-            break
-    return window
+            #encuentra = buscar_jugador.start(text_input)
+            #if encuentra:
+                #jugador = get_jugador.start(text_input)
+                #set_jugador_actual.start(jugador)
+                sg.popup('Bienvenido:', text_input)
+                ok = True
+                break
+            #else:
+                sg.popup("No se pudo encontrar ese nick")
+
+    return window, ok

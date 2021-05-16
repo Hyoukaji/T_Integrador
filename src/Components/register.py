@@ -2,15 +2,21 @@ import PySimpleGUI as sg
 from src.Windows import introduzca_texto
 from src.Components import edad
 from src.Components import genero
+#from src.Handlers import buscar_jugador
+#from src.Handlers import crear_jugador
+#from src.Handlers import set_jugador_actual
+#from src.Handlers import get_jugador
+#from src.Archivos import jugador
 #Abrimos la ventana para registrarse
 
-def start():
+def start(oks):
 
-    window = loop()
+    window, ok= loop(oks)
     window.close()
-
-def loop():
-    ok = False
+    return ok
+def loop(oks):
+    ok = oks
+    #encuentra = True
     t = "Register"
     tx = "Introduzca un nick que no se haya registrado"
     b = "Buscar"
@@ -24,11 +30,17 @@ def loop():
 
         if event == "-update-":
             text_input = values[0]
-            sg.popup('You entered', text_input)
-            ok = True
-            if ok:
-                edad.start()
-                genero.start()
-                sg.popup("Para continuar te sugerimos que configures tu usuario, de lo contrario quedara todo en default")
-            break
-    return window
+            #encuentra = buscar_jugador.start(text_input)
+            #if not encuentra:
+                e = edad.start()
+                g = genero.start()
+                #crear_jugador.start(e,g,text_input)
+                #jugador = get_jugador.start(text_input)
+                #set_jugador_actual.start(jugador)
+                sg.popup("Para continuar te sugerimos que configures tu usuario, de lo contrario quedará todo en default")
+                ok = True
+                break
+            #else:
+                sg.popup("No se encuetra disponible ese nick, introduce otro")
+
+    return window, ok

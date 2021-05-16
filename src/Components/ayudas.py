@@ -1,5 +1,7 @@
 import PySimpleGUI as sg
 from src.Windows import a_b
+#from src.Handlers import set_ayudas
+
 #Abrimos el la ventana para configurar al jugador
 
 def start():
@@ -18,12 +20,13 @@ def loop():
             break
 
         if event == "-a-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
+            ok = True
+            #set_ayudas.start(ok)
+            sg.popup("Ayudas activadas")
+            break
         if event == "-b-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
-
+            ok = False
+            #set_ayudas.start(ok)
+            sg.popup("Ayudas desactivadas")
+            break
     return window

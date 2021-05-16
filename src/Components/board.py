@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import board
-from src.Handlers import boardData
+from src.Handlers import board_data
 from src.Handlers import dame_numeros
 #Abrimos el tablero del juego
 

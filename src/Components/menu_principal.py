@@ -1,18 +1,19 @@
 import PySimpleGUI as sg
 from src.Windows import menu
 from src.Components import board
-from src.Components import loginRegister
+from src.Components import login_register
 from src.Components import settings
 from src.Components import inicio_sesion
-#Menu de components
+#from src.Handlers import actualizar_jugador
+
 def start():
-    inicio_sesion.start()
-    #Aca se ejecuta la ventana del menu
-    window = loop()
+    ok = False
+    oks = inicio_sesion.start(ok)
+    #Aca se ejecuta la ventana del menu principal
+    window = loop(oks)
     window.close()
 
-def loop():
-    okp = True
+def loop(okp):
     #Loop para captar eventos
     window = menu.build()
 
@@ -20,6 +21,8 @@ def loop():
         event, values = window.read()
 
         if event in (sg.WINDOW_CLOSED, "-exit-"):
+            if okp:
+                #actualizar_jugador.start()
             break
         print (event)
         print (values)
@@ -32,7 +35,7 @@ def loop():
                 sg.popup("Tienes que estar logueado para jugar")
         if event == "-login/register-":
             window.hide()
-            loginRegister.start()
+            okp = login_register.start(okp)
             window.un_hide()
         if event == "-settings-":
             window.hide()
