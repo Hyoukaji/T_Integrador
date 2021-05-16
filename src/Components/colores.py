@@ -5,13 +5,10 @@ from src.Windows import a_b
 
 def start():
 
-    window, color = loop()
+    window = loop()
     window.close()
-    #set_color.start(color)
-    if (color != "ninguno"):
-        sg.theme(color)
+
 def loop():
-    color = "ninguno"
     window = a_b.build("Set color 1", "Set color 2","Selección de color")
 
     while True:
@@ -22,11 +19,13 @@ def loop():
 
         if event == "-a-":
             color = "DarkPurple2"
-            sg.popup('You entered', color)
+            #set_color.start(color)
+            sg.popup('Seteaste el color en:', color)
             break
         if event == "-b-":
             color = "DarkBrown4"
-            sg.popup('You entered', color)
+            #set_color.start(color)
+            sg.popup('Seteaste el color en:', color)
             break
 
-    return window, color
+    return window

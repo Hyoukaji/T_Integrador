@@ -4,6 +4,7 @@ from src.Components import introduzca_textoG
 #from src.Handlers import set_text_ganar
 #from src.Handlers import set_text_perder
 #from src.Handlers import set_text_pocoT
+
 #Abrimos la ventana para cambiar los textos del juego
 
 def start():

@@ -6,7 +6,8 @@ from src.Components import genero
 #from src.Handlers import crear_jugador
 #from src.Handlers import set_jugador_actual
 #from src.Handlers import get_jugador
-#from src.Archivos import jugador
+#from src.Archivos import claseJugador
+
 #Abrimos la ventana para registrarse
 
 def start(oks):
