@@ -10,7 +10,7 @@ from src.Components import inicio_sesion
 def start():
     ok = False
     oks = inicio_sesion.start(ok)
-    if ok:
+    if oks:
         jugador = get_jugador_actual.start()
         if jugador.color != "ninguno":
             sg.theme(jugador.color)
@@ -29,8 +29,7 @@ def loop(okp):
             if okp:
                 #actualizar_jugador.start()
             break
-        print (event)
-        print (values)
+        
         if event == "-play-":
             if okp :
                 window.hide()
