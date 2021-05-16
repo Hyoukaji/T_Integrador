@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import json
 from json import JSONEncoder
 import os
@@ -19,7 +13,7 @@ ruta_directorio_2 = os.path.join(ruta_directorio, nom_dir_2)
 nom_arch = "jugadores.json"
 ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
 
-def start(unNick): 
+def start(unNick):
     with open(ruta_archivo, "r") as archivo:
         datos_jugadores = json.load(archivo)
     return datos_jugadores[unNick]

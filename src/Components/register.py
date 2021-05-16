@@ -7,6 +7,8 @@ from src.Handlers import crear_jugador
 from src.Handlers import set_jugador_actual
 from src.Handlers import get_jugador
 from src.Archivos import claseJugador
+from src.Components import ir_crear_archivo
+from src.Handlers import crear_archivo
 
 #Abrimos la ventana para registrarse
 
@@ -33,7 +35,7 @@ def loop(oks):
         if event == "-update-":
             nick = values[0]
             encuentra, verifica= buscar_jugador.start(nick)
-            if (not encuentra) && (verifica):
+            if (not encuentra) & (verifica):
                 e = edad.start()
                 g = genero.start()
                 crear_jugador.start(nick,g,e)
@@ -45,6 +47,9 @@ def loop(oks):
             else:
                 if not verifica:
                     sg.popup("El archivo que guarda los jugadores no existe")
+                    k = ir_crear_archivo.start()
+                    if k:
+                        crear_archivo.start()
                 else:
                     sg.popup("No se encuetra disponible ese nick, introduce otro")
 

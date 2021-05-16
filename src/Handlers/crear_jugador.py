@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import json
 from json import JSONEncoder
 import os
@@ -29,12 +23,6 @@ def start(unNick, unGenero, unaEdad):
                 datos_jugadores[unNick] = persona_json
                 with open(ruta_archivo, 'w') as file:
                     json.dump(datos_jugadores, file, indent=4, cls=JugadorEncoder)
-        else:
-            datos_jugadores = {}
-            persona = Jugador(unNick, unGenero, unaEdad)
-            persona_json = JugadorEncoder().encode(persona)
-            datos_jugadores[unNick] = persona_json
-            with open(ruta_archivo, 'w') as file:
-                json.dump(datos_jugadores, file, indent=4, cls=JugadorEncoder)
+                    
     except FileNotFoundError:
         print("Archivo de jugadores no encontrado")
