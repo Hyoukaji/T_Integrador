@@ -4,11 +4,14 @@ from src.Components import board
 from src.Components import login_register
 from src.Components import settings
 from src.Components import inicio_sesion
-#from src.Handlers import actualizar_jugador
+from src.Handlers import colorear
+from src.Handlers import actualizar_jugador
 
 def start():
     ok = False
     oks = inicio_sesion.start(ok)
+    if oks:
+        colorear.start()
     #Aca se ejecuta la ventana del menu principal
     window = loop(oks)
     window.close()
@@ -22,10 +25,9 @@ def loop(okp):
 
         if event in (sg.WINDOW_CLOSED, "-exit-"):
             if okp:
-                #actualizar_jugador.start()
+                actualizar_jugador.start()
             break
-        print (event)
-        print (values)
+
         if event == "-play-":
             if okp :
                 window.hide()
@@ -36,6 +38,8 @@ def loop(okp):
         if event == "-login/register-":
             window.hide()
             okp = login_register.start(okp)
+            if okp:
+                colorear.start()
             window.un_hide()
         if event == "-settings-":
             window.hide()

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -32,3 +33,10 @@ def set_cant_casillas(valor):
         print("Archivo de jugadores no encontrado")
         
 
+=======
+
+
+
+
+def start(x):
+>>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028

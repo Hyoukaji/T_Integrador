@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -31,3 +32,11 @@ def set_text_pocoT(valor):
     except FileNotFoundError:
         print("Archivo de jugadores no encontrado")
 
+=======
+
+
+
+
+
+def start(text):
+>>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028

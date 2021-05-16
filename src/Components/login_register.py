@@ -2,12 +2,12 @@ import PySimpleGUI as sg
 from src.Windows import login_register
 from src.Components import login
 from src.Components import register
-#from src.Handlers import actualizar_jugador
+from src.Handlers import actualizar_jugador
 #Abrimos la ventana para logearse o regristrarse
 
 def start(oks):
-    #if ok:
-        #actualizar_jugador.start()
+    if oks:
+        actualizar_jugador.start()
     window, ok= loop(oks)
     window.close()
     return ok

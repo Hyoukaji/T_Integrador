@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
-#from src.Handlers import set_cant_casillas
+from src.Handlers import set_cant_casillas
 #Abrimos la ventana para cambiar los textos del juego
 
 def start():
@@ -24,7 +24,7 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                #set_cant_casillas.start(x)
+                set_cant_casillas.start(x)
                 sg.popup("Seteaste la cantidad de casillas en:" + x*x)
                 break
             except:

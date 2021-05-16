@@ -2,6 +2,9 @@ import PySimpleGUI as sg
 from src.Windows import board
 from src.Handlers import board_data
 from src.Handlers import dame_numeros
+from src.Archivos import claseJugador
+from src.Handlers import get_jugador_actual
+
 #Abrimos el tablero del juego
 
 def start():
@@ -11,10 +14,11 @@ def start():
     #Loop para captar eventos del tablero
 def loop():
     #Aca bolcamos la info del jugador
-    cant_casillas = 4
-    cant_match = 2
+    jugador = get_jugador_actual.start()
+    cant_casillas = jugador.tamanio
+    cant_match = jugador.cantidadCoin
     equipos, tam_resto = dame_numeros.start(cant_casillas, cant_match)
-    board_data = boardData.start("tipo:palabras/img", "info", equipos, cant_casillas, cant_match)
+    board_data = board_data.start("tipo:palabras/img", "info", equipos, cant_casillas, cant_match)
 
     window = board.build("jugador 1", board_data)
 

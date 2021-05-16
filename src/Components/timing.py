@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
-#from src.Handlers import set_timing
+from src.Handlers import set_timing
 #Abrimos la ventana para cambiar los textos del juego
 
 def start():
@@ -24,7 +24,7 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                #set_timing.start(x)
+                set_timing.start(x)
                 sg.popup("Seteaste el tiempo en:" + x)
                 break
             except:

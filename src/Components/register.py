@@ -2,11 +2,12 @@ import PySimpleGUI as sg
 from src.Windows import introduzca_texto
 from src.Components import edad
 from src.Components import genero
-#from src.Handlers import buscar_jugador
-#from src.Handlers import crear_jugador
-#from src.Handlers import set_jugador_actual
-#from src.Handlers import get_jugador
-#from src.Archivos import jugador
+from src.Handlers import buscar_jugador
+from src.Handlers import crear_jugador
+from src.Handlers import set_jugador_actual
+from src.Handlers import get_jugador
+from src.Archivos import claseJugador
+
 #Abrimos la ventana para registrarse
 
 def start(oks):
@@ -16,7 +17,8 @@ def start(oks):
     return ok
 def loop(oks):
     ok = oks
-    #encuentra = True
+    verifica = True
+    encuentra = True
     t = "Register"
     tx = "Introduzca un nick que no se haya registrado"
     b = "Buscar"
@@ -29,18 +31,21 @@ def loop(oks):
             break
 
         if event == "-update-":
-            text_input = values[0]
-            #encuentra = buscar_jugador.start(text_input)
-            #if not encuentra:
+            nick = values[0]
+            encuentra, verifica= buscar_jugador.start(nick)
+            if (not encuentra) && (verifica):
                 e = edad.start()
                 g = genero.start()
-                #crear_jugador.start(e,g,text_input)
-                #jugador = get_jugador.start(text_input)
-                #set_jugador_actual.start(jugador)
+                crear_jugador.start(nick,g,e)
+                jugador = get_jugador.start(nick)
+                set_jugador_actual.start(jugador)
                 sg.popup("Para continuar te sugerimos que configures tu usuario, de lo contrario quedará todo en default")
                 ok = True
                 break
-            #else:
-                sg.popup("No se encuetra disponible ese nick, introduce otro")
+            else:
+                if not verifica:
+                    sg.popup("El archivo que guarda los jugadores no existe")
+                else:
+                    sg.popup("No se encuetra disponible ese nick, introduce otro")
 
     return window, ok

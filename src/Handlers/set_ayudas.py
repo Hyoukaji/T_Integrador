@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -35,7 +36,13 @@ set_ayudas(True)
 
 
 # In[ ]:
+=======
+>>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028
 
 
 
 
+<<<<<<< HEAD
+=======
+def start(ok):
+>>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028
