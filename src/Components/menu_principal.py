@@ -4,16 +4,14 @@ from src.Components import board
 from src.Components import login_register
 from src.Components import settings
 from src.Components import inicio_sesion
-#from src.Archivos import get_jugador_actual
+from src.Handlers import colorear
 #from src.Handlers import actualizar_jugador
 
 def start():
     ok = False
     oks = inicio_sesion.start(ok)
     if oks:
-        jugador = get_jugador_actual.start()
-        if jugador.color != "ninguno":
-            sg.theme(jugador.color)
+        colorear.start()
     #Aca se ejecuta la ventana del menu principal
     window = loop(oks)
     window.close()
@@ -29,7 +27,7 @@ def loop(okp):
             if okp:
                 #actualizar_jugador.start()
             break
-        
+
         if event == "-play-":
             if okp :
                 window.hide()
@@ -41,9 +39,7 @@ def loop(okp):
             window.hide()
             okp = login_register.start(okp)
             if okp:
-                jugador = get_jugador_actual.start()
-                if jugador.color != "ninguno":
-                    sg.theme(jugador.color)
+                colorear.start()
             window.un_hide()
         if event == "-settings-":
             window.hide()
