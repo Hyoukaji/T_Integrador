@@ -1,12 +1,13 @@
 import PySimpleGUI as sg
 from src.Windows import a_b
+#from src.Handlers import set_color
 #Abrimos el la ventana para configurar al jugador
 
 def start():
 
     window, color = loop()
     window.close()
-    #INSERTE AQUI EL HANDLER MODIFICADOR
+    #set_color.start(color)
     if (color != "ninguno"):
         sg.theme(color)
 def loop():

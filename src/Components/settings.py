@@ -6,7 +6,8 @@ from src.Components import criterio
 from src.Components import matchs
 from src.Components import cant_casillas
 from src.Components import ayudas
-from src.Components import set_timing
+from src.Components import timing
+
 #Abrimos el la ventana para configurar al jugador
 
 def start():

@@ -4,9 +4,9 @@ from src.Windows import introduzca_texto
 
 def start():
 
-    window = loop()
+    window, x= loop()
     window.close()
-
+    return x
 def loop():
     t = "Genero"
     tx = "Introduzca su género"
@@ -22,4 +22,4 @@ def loop():
             text_input = values[0]
             sg.popup('You entered', text_input)
             break
-    return window
+    return window, text_input

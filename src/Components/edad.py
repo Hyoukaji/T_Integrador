@@ -4,9 +4,9 @@ from src.Windows import introduzca_texto
 
 def start():
 
-    window = loop()
+    window, x= loop()
     window.close()
-
+    return x
 def loop():
     t = "Edad"
     tx = "Introduzca su edad"
@@ -26,5 +26,5 @@ def loop():
                 break
             except:
                 sg.popup("Tienes que ingresar un número entero")
-            
-    return window
+
+    return window, x

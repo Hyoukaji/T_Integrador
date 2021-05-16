@@ -1,5 +1,7 @@
 import PySimpleGUI as sg
 from src.Windows import a_b
+#from src.Handlers import set_criterio
+#from src.Handlers import get_nom_criterios
 #Abrimos el la ventana para configurar al jugador
 
 def start():
@@ -8,7 +10,7 @@ def start():
     window.close()
 
 def loop():
-
+    #ca, cb = get_nom_criterios.start()
     window = a_b.build("Set criterio 1","Set criterio 2", "Selección de Criterios")
 
     while True:
@@ -18,12 +20,11 @@ def loop():
             break
 
         if event == "-a-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
+            #set_criterio.start(ca)
+            sg.popup("Seteaste el criterio 1")
+            break
         if event == "-b-":
-            window.hide()
-            #texto_in_game.start()
-            window.un_hide()
-
+            #set_criterio.start(cb)
+            sg.popup("Seteaste el criterio 2")
+            break
     return window
