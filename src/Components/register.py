@@ -40,6 +40,7 @@ def loop(oks):
                 g = genero.start()
                 crear_jugador.start(nick, e, g)
                 set_jugador_actual.start(get_jugador.start(nick))
+                sg.popup("Para continuar te recomendamos que configures tu usuario de lo contrario quedará todo en default")
                 break
             else:
                 if not verifica:
@@ -47,7 +48,6 @@ def loop(oks):
                     k = ir_crear_archivo.start()
                     if k:
                         crear_archivo.start()
-                        break
                 else:
                     sg.popup("No se encuetra disponible ese nick, introduce otro")
 

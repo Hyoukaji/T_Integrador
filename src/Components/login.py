@@ -27,12 +27,12 @@ def loop(oks):
             break
 
         if event == "-update-":
-            text_input = values[0]
-            encuentra, verifica= buscar_jugador.start(text_input)
+            nick = values[0]
+            encuentra, verifica= buscar_jugador.start(nick)
             if encuentra:
-                jugador = get_jugador.start(text_input)
+                jugador = get_jugador.start(nick)
                 set_jugador_actual.start(jugador)
-                sg.popup('Bienvenido:', text_input)
+                sg.popup('Bienvenido:', nick)
                 ok = True
                 break
             else:
