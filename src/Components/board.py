@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import board
-from src.Handlers import board_data
+from src.Handlers import crear_board_data
 from src.Handlers import dame_numeros
 from src.Handlers import get_jugador_actual
 
@@ -17,7 +17,7 @@ def loop():
     cant_casillas = jugador["tamanio"]
     cant_match = jugador["cantidadCoin"]
     equipos, tam_resto = dame_numeros.start(cant_casillas, cant_match)
-    board_data = board_data.start("tipo:palabras/img", "info", equipos, cant_casillas, cant_match)
+    board_data = crear_board_data.start("tipo:palabras/img", "info", equipos, cant_casillas, cant_match)
 
     window = board.build("jugador 1", board_data)
 

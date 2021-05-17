@@ -3,8 +3,8 @@ def start(x, y):
     x = x * x
     resto = 0
     #CALCULAR EL RESTO PARA VER SI DA PAR O NO
-    if (x / y != 1):
-        resto = 0
+    if (x % y != 0):
+        resto = 1
         z = x/y + 1
     else:
         z = x/y

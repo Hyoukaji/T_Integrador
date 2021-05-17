@@ -19,25 +19,22 @@ ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
 
 def start(unNick):
     try:
-<<<<<<< HEAD
         dato_jugador_actual={}
         if os.path.exists(ruta_archivo):
             with open(ruta_archivo_2, "r") as archivo_2:
                 dato_jugador_actual = json.load(archivo_2)
-                if unNick not in dato_jugador_actual:    
+                if unNick not in dato_jugador_actual:
                     with open(ruta_archivo, "r") as archivo:
                         datos_jugadores = json.load(archivo)
                         dato_jugador_actual[unNick] = datos_jugadores[unNick].copy()
                         with open(ruta_archivo_2, "w") as file:
-                            json.dump(dato_jugador_actual, file, indent=4)  
+                            json.dump(dato_jugador_actual, file, indent=4)
         else:
             with open(ruta_archivo, "r") as archivo:
                 datos_jugadores = json.load(archivo)
                 dato_jugador_actual[unNick] = datos_jugadores[unNick].copy()
                 with open(ruta_archivo_2, "w") as file:
                     json.dump(dato_jugador_actual, file, indent=4)
-                    
-=======
         with open(ruta_archivo_2, "r") as archivo_2:
             dato_jugador_actual = json.load(archivo_2)
             if unNick not in dato_jugador_actual:
@@ -46,8 +43,6 @@ def start(unNick):
                     dato_jugador_actual = datos_jugadores[unNick]
                     with open(ruta_archivo_2, "w") as file:
                         json.dump(dato_jugador_actual, file, indent=4)
-
->>>>>>> 66ac02e11473b9389d1bfdc3ca3d4c68810b61cf
     except FileNotFoundError:
         with open(ruta_archivo, "r") as archivo:
             datos_jugadores = json.load(archivo)
