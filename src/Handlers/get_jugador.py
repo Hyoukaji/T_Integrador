@@ -11,6 +11,7 @@ ruta_directorio_2 = os.path.join(ruta_directorio, nom_dir_2)
 nom_arch = "jugadores.json"
 ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
 
+<<<<<<< HEAD
 def start(unNick): 
     try:
         datos_jugador = {}
@@ -24,3 +25,9 @@ def start(unNick):
                         
     except FileNotFoundError:
         print("Archivo de jugadores no encontrado")      
+=======
+def start(unNick):
+    with open(ruta_archivo, "r") as archivo:
+        datos_jugadores = json.load(archivo)
+    return datos_jugadores[unNick]
+>>>>>>> 66ac02e11473b9389d1bfdc3ca3d4c68810b61cf
