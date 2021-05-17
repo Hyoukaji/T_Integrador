@@ -1,5 +1,1 @@
-
-
-
-
-def start(nom):
+#def start(nom):

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[13]:
-
-
 import json
-from json import JSONEncoder
 import os
 import os.path
 
@@ -25,44 +17,28 @@ ruta_archivo_2 = os.path.join(ruta_directorio_2, nom_arch_2)
 nom_arch = "jugadores.json"
 ruta_archivo = os.path.join(ruta_directorio_2, nom_arch) 
 
-def actualizar_jugador(unNick):
+def start(unNick):
     try:
-        with open(ruta_archivo_2, "r") as archivo_2:
-            dato_jugador_actual = json.load(archivo_2)
-            if unNick not in dato_jugador_actual:    
-                with open(ruta_archivo, "r") as archivo:
-                    datos_jugadores = json.load(archivo)
-                    dato_jugador_actual = datos_jugadores[unNick]
-                    with open(ruta_archivo_2, "w") as file:
-                        json.dump(dato_jugador_actual, file, indent=4)  
-                        
+        dato_jugador_actual={}
+        if os.path.exists(ruta_archivo):
+            with open(ruta_archivo_2, "r") as archivo_2:
+                dato_jugador_actual = json.load(archivo_2)
+                if unNick not in dato_jugador_actual:    
+                    with open(ruta_archivo, "r") as archivo:
+                        datos_jugadores = json.load(archivo)
+                        dato_jugador_actual[unNick] = datos_jugadores[unNick].copy()
+                        with open(ruta_archivo_2, "w") as file:
+                            json.dump(dato_jugador_actual, file, indent=4)  
+        else:
+            with open(ruta_archivo, "r") as archivo:
+                datos_jugadores = json.load(archivo)
+                dato_jugador_actual[unNick] = datos_jugadores[unNick].copy()
+                with open(ruta_archivo_2, "w") as file:
+                    json.dump(dato_jugador_actual, file, indent=4)
+                    
     except FileNotFoundError:
         with open(ruta_archivo, "r") as archivo:
             datos_jugadores = json.load(archivo)
-            dato_jugador_actual = datos_jugadores[unNick]
+            dato_jugador_actual[unNick] = datos_jugadores[unNick].copy()
             with open(ruta_archivo_2, "w") as file:
-                json.dump(dato_jugador_actual, file, indent=4) 
-                
-
-
-
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-=======
->>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028
-
-
-
-
-<<<<<<< HEAD
-=======
-def start():
->>>>>>> 782b3a38d174d88a004eebe1e06bfc1d4a831028
+                json.dump(dato_jugador_actual, file, indent=4)

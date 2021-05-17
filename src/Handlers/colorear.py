@@ -1,5 +1,5 @@
 from src.Handlers import get_jugador_actual
-from src.Archivo import claseJugador
+from src.Archivos import claseJugador
 
 
 def start():

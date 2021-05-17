@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 from json import JSONEncoder
 from datetime import datetime
 
@@ -59,10 +53,6 @@ class JugadorEncoder(JSONEncoder):
     
     def default(self, o):
         return o.__dict__
-    
-
-
-# In[ ]:
 
 
 
