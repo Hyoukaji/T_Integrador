@@ -25,7 +25,7 @@ def loop():
             try:
                 x = int(text_input)
                 sg.popup("Seteaste la cantidad de casillas del nivel 1 en:", x*x)
-                y, z= cant_casillas2.start()
+                y, z = cant_casillas2.start()
                 set_cant_casillas.start(x, y, z)
                 break
             except:
