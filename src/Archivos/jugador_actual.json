@@ -12,7 +12,7 @@
         "matchs": 2,
         "elemento_casilla": 0,
         "ayuda ": false,
-        "color": "ninguno",
+        "color": "DarkBrown4",
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"
