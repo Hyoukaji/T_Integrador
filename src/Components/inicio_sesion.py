@@ -10,7 +10,7 @@ def start(oks):
     ok = login_register.start(oks)
     if ok:
         colorear.start()
-    okp = ir_a_settings.start()
-    if okp:
-        settings.start()
+        okp = ir_a_settings.start()
+        if okp:
+            settings.start()
     return ok

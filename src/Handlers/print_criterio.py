@@ -1,10 +1,11 @@
 import PySimpleGUI as sg
-from src.Handlers import get_criterio
+from src.Handlers import get_criterios
 
 
 
 def start():
-    criterio_actual = get_criterio.start()
+    titulo, criterio_actual = get_criterios.start()
     titulo_criterio = "Titulo del criterio"
-    print(criterio_actual.split("-"))
-    sg.popup("El criterio usado para esta partida es:" + titulo_criterio)
+
+    sg.popup("El criterio usado para esta partida es:", titulo_criterio)
+    sg.popup(criterio_actual)
