@@ -56,7 +56,7 @@ def start_6():
         lista = list(map(lambda row:row[3], csvreader))
     return "Villanos de las peliculas de Disney", lista
 
-def start_7):
+def start_7():
     nom_arch = "battles.csv"
     ruta_archivo= os.path.join("src/Archivos/", nom_arch)
     with open(ruta_archivo, "r") as batallas_arch:
