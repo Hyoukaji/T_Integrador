@@ -44,9 +44,12 @@ def loop(okp):
                 colorear.start()
             window.un_hide()
         if event == "-settings-":
-            window.hide()
-            settings.start()
-            window.un_hide()
+            if okp:
+                window.hide()
+                settings.start()
+                window.un_hide()
+            else:
+                sg.popup("Tienes que estar logueado para configurar")
         #if event == "-score-":
             #window.hide()
             #window.un_hide()
