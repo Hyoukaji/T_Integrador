@@ -8,8 +8,13 @@
         "matchs": 2,
         "elemento_casilla": 0,
         "ayuda": false,
+<<<<<<< HEAD
         "color": "ninguno",
         "text_ganar": "I win",
+=======
+        "color": "DarkPurple2",
+        "text_ganar": "Ganaste",
+>>>>>>> refs/remotes/origin/main
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"
     }

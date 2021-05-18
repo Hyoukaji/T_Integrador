@@ -2,7 +2,6 @@ import json
 from json import JSONEncoder
 import os
 import os.path
-from src.Archivos import claseJugador
 
 nom_Pro = "T_Integrador"
 ruta_proyecto = os.path.join(os.getcwd(),nom_Pro)
@@ -15,7 +14,7 @@ ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
 
 def start():
     datos_jugadores = {}
-    persona = Jugador("tu vieja","hermafrodita",18)
+    persona = Jugador("hector","hombre",18)
     persona_json = JugadorEncoder().encode(persona)
     datos_jugadores[unNick] = persona_json
     with open(ruta_archivo, 'w') as file:
