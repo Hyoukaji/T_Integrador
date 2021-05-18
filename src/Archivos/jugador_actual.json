@@ -5,8 +5,8 @@
         "puntos": 0,
         "tiempo": 180,
         "cant_casillas": [
-            2,
             4,
+            5,
             6
         ],
         "matchs": 2,
