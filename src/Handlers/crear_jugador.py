@@ -11,7 +11,7 @@ def start(unNick, edad, genero):
         if os.path.exists(ruta_archivo):
             with open(ruta_archivo, "r") as archivo:
                 datos_jugadores = json.load(archivo)
-                datos_jugadores[unNick] = {"genero": genero,"edad" : edad,"puntos" : 0,"tiempo" : 180, "cant_casillas" : 4, "matchs" : 2,"elemento_casilla" : 0,"ayuda" : False,"color" : "ninguno", "text_ganar"  : "Ganaste", "text_perder" :"Perdiste","text_pocoT " : "Te queda poco tiempo D:"}
+                datos_jugadores[unNick] = {"genero": genero,"edad" : edad,"puntos" : 0,"tiempo" : 180, "cant_casillas" : 2, "matchs" : 2,"elemento_casilla" : 0,"ayuda" : False,"color" : "ninguno", "text_ganar"  : "Ganaste", "text_perder" :"Perdiste","text_pocoT " : "Te queda poco tiempo D:"}
                 with open(ruta_archivo, 'w') as file:
                     json.dump(datos_jugadores, file, indent=4)
         else:

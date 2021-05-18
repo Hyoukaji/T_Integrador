@@ -15,8 +15,9 @@ def start():
 def loop():
     #Aca bolcamos la info del jugador
     jugador = get_jugador_actual.start()
-    cant_casillas = jugador["tamanio"]
-    cant_match = jugador["cantidadCoin"]
+    nick = get_nick_actual.start()
+    cant_casillas = jugador[nick]["cant_casillas"]
+    cant_match = jugador[nick]["matchs"]
     nick = get_nick_actual.start()
     equipos, tam_resto = dame_numeros.start(cant_casillas, cant_match)
     board_data = crear_board_data.start("tipo:palabras/img", "info", equipos, cant_casillas, cant_match)

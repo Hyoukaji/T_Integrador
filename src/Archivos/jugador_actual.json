@@ -7,7 +7,7 @@
         "cant_casillas": 4,
         "matchs": 2,
         "elemento_casilla": 0,
-        "ayuda": true,
+        "ayuda": false,
         "color": "ninguno",
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",

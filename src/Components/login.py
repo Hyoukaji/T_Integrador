@@ -3,7 +3,6 @@ from src.Windows import introduzca_texto
 from src.Handlers import buscar_jugador
 from src.Handlers import set_jugador_actual
 from src.Handlers import get_jugador
-from src.Archivos import claseJugador
 #Abrimos la ventana para logearse
 
 def start(oks):

@@ -6,7 +6,6 @@ from src.Handlers import buscar_jugador
 from src.Handlers import crear_jugador
 from src.Handlers import set_jugador_actual
 from src.Handlers import get_jugador
-from src.Archivos import claseJugador
 from src.Components import ir_crear_archivo
 from src.Handlers import crear_archivo
 

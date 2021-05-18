@@ -7,4 +7,4 @@ def start():
     jugador = get_jugador_actual.start()
     unNick = get_nick_actual.start()
     if jugador[unNick]["color"] != "ninguno":
-        sg.theme(jugador["color"])
+        sg.theme(jugador[unNick]["color"])
