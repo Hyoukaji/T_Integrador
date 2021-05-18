@@ -29,7 +29,7 @@ def loop():
             window.un_hide()
         if event == "-timing-":
             window.hide()
-            set_timing.start()
+            timing.start()
             window.un_hide()
         if event == "-casillas-":
             window.hide()
