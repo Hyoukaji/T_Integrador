@@ -2,10 +2,7 @@ import json
 import os
 import os.path
 from src.Handlers import get_nick_actual
-<<<<<<< HEAD
-=======
 
->>>>>>> 29007215433e0430b965afa01a204c7a3604ab6b
 nom_arch_2= "jugador_actual.json"
 ruta_archivo_2 = os.path.join("src/Archivos/", nom_arch_2)
 
