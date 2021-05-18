@@ -3,18 +3,19 @@
         "genero": "hombre",
         "edad": 33,
         "puntos": 0,
-        "tiempo": 180,
+        "tiempo": 33,
         "cant_casillas": [
             4,
             5,
             6
         ],
-        "matchs": 2,
+        "matchs": 44,
         "elemento_casilla": 0,
         "ayuda ": false,
-        "color": "DarkPurple2",
+        "color": "DarkBrown4",
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
-        "text_pocoT ": "Te queda poco tiempo D:"
+        "text_pocoT ": "Te queda poco tiempo D:",
+        "text_pocoT": "hh"
     }
 }
