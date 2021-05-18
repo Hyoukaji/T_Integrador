@@ -12,7 +12,6 @@
         "matchs": 2,
         "elemento_casilla": 0,
         "ayuda ": false,
-<<<<<<< HEAD
         "color": "DarkBrown4",
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
@@ -32,9 +31,6 @@
         "elemento_casilla": 0,
         "ayuda": false,
         "color": "DarkBrown4",
-=======
-        "color": "DarkPurple2",
->>>>>>> 4b947db571d64824ebbe2ae9e5c73bc5f42df937
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"

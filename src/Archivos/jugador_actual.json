@@ -1,9 +1,9 @@
 {
-    "kevin": {
-        "genero": "hombre",
-        "edad": 33,
+    "maria": {
+        "genero": "femenino",
+        "edad": 23,
         "puntos": 0,
-        "tiempo": 180,
+        "tiempo": 300,
         "cant_casillas": [
             2,
             4,
@@ -11,12 +11,8 @@
         ],
         "matchs": 2,
         "elemento_casilla": 0,
-        "ayuda ": false,
-<<<<<<< HEAD
+        "ayuda": false,
         "color": "DarkBrown4",
-=======
-        "color": "DarkPurple2",
->>>>>>> 4b947db571d64824ebbe2ae9e5c73bc5f42df937
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"

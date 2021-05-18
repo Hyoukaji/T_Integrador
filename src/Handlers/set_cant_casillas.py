@@ -2,7 +2,8 @@ import json
 import os
 import os.path
 from src.Handlers import get_nick_actual
-
+nom_arch_2= "jugador_actual.json"
+ruta_archivo_2 = os.path.join("src/Archivos/", nom_arch_2)
 
 def start(valor1=2,valor2=4,valor3=6):
     try:
