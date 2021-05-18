@@ -1,8 +1,10 @@
 from src.Handlers import get_jugador_actual
-from src.Archivos import claseJugador
-
+from src.Handlers import get_nick_actual
+import PySimpleGUI as sg
 
 def start():
+    jugador = {}
     jugador = get_jugador_actual.start()
-    if jugador["color"] != "ninguno":
+    unNick = get_nick_actual.start()
+    if jugador[unNick]["color"] != "ninguno":
         sg.theme(jugador["color"])

@@ -2,14 +2,8 @@ import json
 import os
 import os.path
 
-nom_Pro = "T_Integrador"
-ruta_proyecto = os.path.join(os.getcwd(),nom_Pro)
-nom_dir = "src"
-ruta_directorio = os.path.join(ruta_proyecto, nom_dir)
-nom_dir_2 = "Archivos"
-ruta_directorio_2 = os.path.join(ruta_directorio, nom_dir_2)
 nom_arch = "jugadores.json"
-ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
+ruta_archivo = os.path.join("src/Archivos/", nom_arch)
 
 def start(unNick, edad, genero):
     try:
@@ -22,7 +16,7 @@ def start(unNick, edad, genero):
                     json.dump(datos_jugadores, file, indent=4)
         else:
             datos_jugadores[unNick] = {"genero": genero,"edad" : edad,"puntos" : 0,"tiempo" : 180, "cant_casillas" : 4,"matchs" : 2,"elemento_casilla" : 0, "ayuda ": False,"color" : "ninguno","text_ganar"  : "Ganaste","text_perder" :"Perdiste","text_pocoT " : "Te queda poco tiempo D:"}
-            with open(ruta_archivo, 'w') as file:
+            with open(ruta_archivo, 'w+') as file:
                 json.dump(datos_jugadores, file, indent=4)
                 json.dump(datos_jugadores, file, indent=4, cls=JugadorEncoder)
     except FileNotFoundError:

@@ -13,15 +13,11 @@ def start(unNick):
         datos_jugador = {}
         with open(ruta_archivo, "r") as archivo:
             datos_jugadores = json.load(archivo)
-            try:
+            if unNick in datos_jugadores:
                 datos_jugador[unNick] = datos_jugadores[unNick].copy()
                 return datos_jugador
-            except:
+            else:
                 return None
 
     except FileNotFoundError:
         print("Archivo de jugadores no encontrado")
-def start(unNick):
-    with open(ruta_archivo, "r") as archivo:
-        datos_jugadores = json.load(archivo)
-    return datos_jugadores[unNick]
