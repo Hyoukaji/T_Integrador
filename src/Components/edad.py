@@ -22,7 +22,7 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                sg.popup('You entered', text_input)
+                sg.popup('Seteaste tu edad en:', text_input)
                 break
             except:
                 sg.popup("Tienes que ingresar un número entero")

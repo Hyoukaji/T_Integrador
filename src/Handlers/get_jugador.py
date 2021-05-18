@@ -4,12 +4,8 @@ import os.path
 
 nom_Pro = "T_Integrador"
 ruta_proyecto = os.path.join(os.getcwd(),nom_Pro)
-nom_dir = "src"
-ruta_directorio = os.path.join(ruta_proyecto, nom_dir)
-nom_dir_2 = "Archivos"
-ruta_directorio_2 = os.path.join(ruta_directorio, nom_dir_2)
-nom_arch = "jugadores.json"
-ruta_archivo = os.path.join(ruta_directorio_2, nom_arch)
+
+ruta_archivo = os.path.join(os.getcwd(), "src/Archivos/jugadores.json")
 
 
 def start(unNick):

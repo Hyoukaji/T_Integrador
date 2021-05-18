@@ -20,6 +20,6 @@ def loop():
             break
         if event == "-update-":
             text_input = values[0]
-            sg.popup('You entered', text_input)
+            sg.popup('Seteaste tu genero en:', text_input)
             break
     return window, text_input

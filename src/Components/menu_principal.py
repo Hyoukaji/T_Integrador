@@ -6,6 +6,7 @@ from src.Components import settings
 from src.Components import inicio_sesion
 from src.Handlers import colorear
 from src.Handlers import actualizar_jugador
+#from src.Handlers import print_criterio
 
 def start():
     ok = False
@@ -30,6 +31,7 @@ def loop(okp):
 
         if event == "-play-":
             if okp :
+                #print_criterio.start()
                 window.hide()
                 board.start()
                 window.un_hide()

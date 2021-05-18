@@ -2,7 +2,6 @@ import PySimpleGUI as sg
 from src.Windows import settings
 from src.Components import texto_in_game
 from src.Components import colores
-from src.Components import criterio
 from src.Components import matchs
 from src.Components import cant_casillas
 from src.Components import ayudas
@@ -39,10 +38,6 @@ def loop():
         if event == "-matchs-":
             window.hide()
             matchs.start()
-            window.un_hide()
-        if event == "-criterio-":
-            window.hide()
-            criterio.start()
             window.un_hide()
         if event == "-text-":
             window.hide()

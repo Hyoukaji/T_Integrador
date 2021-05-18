@@ -36,6 +36,7 @@ def loop(oks):
             nick = values[0]
             encuentra, verifica= buscar_jugador.start(nick)
             if (not encuentra)&(verifica):
+                sg.popup("A continuacion introduzca su edad y genero para terminar de crear el usuario")
                 e = edad.start()
                 g = genero.start()
                 crear_jugador.start(nick, e, g)
