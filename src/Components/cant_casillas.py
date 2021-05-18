@@ -25,7 +25,7 @@ def loop():
             try:
                 x = int(text_input)
                 set_cant_casillas.start(x)
-                sg.popup("Seteaste la cantidad de casillas en:" + x*x)
+                sg.popup("Seteaste la cantidad de casillas en:", x*x)
                 break
             except:
                 sg.popup("Tienes que ingresar un número entero")

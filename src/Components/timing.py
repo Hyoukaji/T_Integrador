@@ -25,7 +25,7 @@ def loop():
             try:
                 x = int(text_input)
                 set_timing.start(x)
-                sg.popup("Seteaste el tiempo en:" + x)
+                sg.popup("Seteaste el tiempo en:", x)
                 break
             except:
                 sg.popup("Tienes que ingresar un número entero")

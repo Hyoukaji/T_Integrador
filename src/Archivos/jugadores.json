@@ -40,5 +40,19 @@
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"
+    },
+    "kevin": {
+        "genero": "masculino",
+        "edad": 13,
+        "puntos": 0,
+        "tiempo": 180,
+        "cant_casillas": 2,
+        "matchs": 2,
+        "elemento_casilla": 0,
+        "ayuda": false,
+        "color": "ninguno",
+        "text_ganar": "Ganaste",
+        "text_perder": "Perdiste",
+        "text_pocoT ": "Te queda poco tiempo D:"
     }
 }
