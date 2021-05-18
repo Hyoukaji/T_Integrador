@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
 from src.Handlers import set_timing
-#Abrimos la ventana para cambiar los textos del juego
 
 def start():
 

@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 from src.Windows import introduzca_texto
 from src.Handlers import set_cant_casillas
-#Abrimos la ventana para cambiar los textos del juego
 
 def start():
 
@@ -10,7 +9,7 @@ def start():
 
 def loop():
     t = "Cantidad de casillas"
-    tx = "Introduzca un número para elevarlo al cuadrado y crear el tablero"
+    tx = "Introduzca 3 números para elevarlos al cuadrado y crear los tableros"
     b = "Actualizar"
     window = introduzca_texto.build(tx, b, t)
 
@@ -24,10 +23,24 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                set_cant_casillas.start(x)
-                sg.popup("Seteaste la cantidad de casillas en:", x*x)
-                break
+                sg.popup("Seteaste la cantidad de casillas del nivel 1 en:", x*x)
+                if event == "-update-":
+                    text_input = values[0]
+                    try:
+                        y = int(text_input)
+                        sg.popup("Seteaste la cantidad de casillas del nivel 2 en:", y*y)
+                        if event == "-update-":
+                            text_input = values[0]
+                            try:
+                                z = int(text_input)
+                                sg.popup("Seteaste la cantidad de casillas del nivel 3 en:", z*z)
+                                set_cant_casillas.start(x, y, z)
+                                break
+                            except:
+                                sg.popup("Tienes que ingresar un número entero, vuelve a empezar.....")
+                    except:
+                        sg.popup("Tienes que ingresar un número entero, vuelve a empezar...")
             except:
-                sg.popup("Tienes que ingresar un número entero")
+                sg.popup("Tienes que ingresar un número entero, vuelve a empezar")
 
     return window

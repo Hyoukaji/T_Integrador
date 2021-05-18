@@ -1,60 +1,18 @@
 {
-    "maria": {
-        "genero": "No configurado a\u00fan",
-        "edad": 0,
+    "kevin": {
+        "genero": "hombre",
+        "edad": 33,
         "puntos": 0,
         "tiempo": 180,
-        "cant_casillas": 4,
+        "cant_casillas": [
+            2,
+            4,
+            6
+        ],
         "matchs": 2,
         "elemento_casilla": 0,
         "ayuda ": false,
         "color": "ninguno",
-        "text_ganar": "Ganaste",
-        "text_perder": "Perdiste",
-        "text_pocoT ": "Te queda poco tiempo D:"
-    },
-    "emilio": {
-        "genero": "No configurado a\u00fan",
-        "edad": 0,
-        "puntos": 0,
-        "tiempo": 180,
-        "cant_casillas": 4,
-        "matchs": 2,
-        "elemento_casilla": 0,
-        "ayuda": false,
-        "color": "ninguno",
-        "text_ganar": "Ganaste",
-        "text_perder": "Perdiste",
-        "text_pocoT ": "Te queda poco tiempo D:"
-    },
-    "milo": {
-        "genero": "Sin indicar",
-        "edad": 0,
-        "puntos": 0,
-        "tiempo": 180,
-        "cant_casillas": 4,
-        "matchs": 2,
-        "elemento_casilla": 0,
-        "ayuda": false,
-<<<<<<< HEAD
-        "color": "DarkBrown4",
-        "text_ganar": "Ganaste",
-        "text_perder": "Perdiste",
-        "text_pocoT ": "Te queda poco tiempo D:"
-    },
-    "kevin": {
-        "genero": "varon",
-        "edad": 19,
-        "puntos": 0,
-        "tiempo": 180,
-        "cant_casillas": 2,
-        "matchs": 2,
-        "elemento_casilla": 0,
-        "ayuda": false,
-        "color": "ninguno",
-=======
-        "color": "DarkPurple2",
->>>>>>> refs/remotes/origin/main
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"
