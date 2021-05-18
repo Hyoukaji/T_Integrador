@@ -4,7 +4,7 @@ import os.path
 import string
 
 nom_arch_2= "jugador_actual.json"
-ruta_archivo_2 = os.path.join("src/Archivos/"ruta_directorio_2, nom_arch_2) 
+ruta_archivo_2 = os.path.join("src/Archivos/", nom_arch_2) 
 
 def start(): 
     datos_jugador = {}

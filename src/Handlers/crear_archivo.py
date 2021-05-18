@@ -19,4 +19,4 @@ def start():
     persona_json = JugadorEncoder().encode(persona)
     datos_jugadores[unNick] = persona_json
     with open(ruta_archivo, 'w') as file:
-        json.dump(datos_jugadores, file, indent=4, cls=JugadorEncoder)
+        json.dump(datos_jugadores, file, indent=4)
