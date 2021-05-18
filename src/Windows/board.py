@@ -11,7 +11,7 @@ def build(player1_name, c):
     #Aca las celdas para hacer las coincidencias
     for y in range(c):
         layout += [
-            [sg.Button(" ", size=(8, 4), key=f"cell-{x}-{y}") for x in range(c)]
+            [sg.Button("?", size=(8, 4), key=f"cell-{x}-{y}") for x in range(c)]
         ]
 
     board = sg.Window("Tablero del juego").Layout(layout)

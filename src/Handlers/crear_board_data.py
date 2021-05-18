@@ -4,8 +4,8 @@ def start(tipo, info, x, y, z):
     criterio = {"tipo" : tipo, "info" : info}
     equipo = x
     cant_match = z
-    mask = "?"
-    board_data = [casilla, criterio, equipo, cant_match, mask]
+    mask = "x"
+    board_data = {"casilla" : casilla, "criterio" : criterio, "equipo" : equipo, "cant_match" : cant_match, "mask" : mask}
     matriz = [[board_data] * y for _i in range(y)]
 
     return matriz

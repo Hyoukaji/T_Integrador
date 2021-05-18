@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
-#Creador de ventana para configurar
+
+
 def build():
     layout = [
         [sg.Button("Texto al ganar",size=(50,2), key="-ganar-")],

@@ -3,7 +3,7 @@ from datetime import date
 from datetime import datetime
 import calendar
 
-def get_criterios():
+def start():
     dia = date.today()
     hora = datetime.now().hour
     if calendar.day_name[dia.weekday()] == "Monday":
@@ -41,5 +41,3 @@ def get_criterios():
             return criterios.start_5()
         else:
             return criterios.start_8()
-
-

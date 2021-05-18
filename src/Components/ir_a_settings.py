@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 from src.Windows import a_b
-#Abrimos el la ventana para configurar al jugador
 
 def start():
     window, ok= loop()
