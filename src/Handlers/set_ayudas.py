@@ -15,6 +15,5 @@ def start(valor):
             dato_jugador_actual[unNick]["ayuda"] = valor
             with open(ruta_archivo_2, "w") as file:
                 json.dump(dato_jugador_actual, file, indent=4)
-                json.dump(dato_jugador_actual, file, indent=4)
     except FileNotFoundError:
         print("Archivo de jugadores no encontrado")

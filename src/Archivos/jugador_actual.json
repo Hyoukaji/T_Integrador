@@ -1,17 +1,17 @@
 {
-    "lala": {
-        "genero": "femenino",
-        "edad": 21,
+    "kevin": {
+        "genero": "masculino",
+        "edad": 19,
         "puntos": 0,
         "tiempo": 180,
         "cant_casillas": [
+            1,
             2,
-            4,
-            6
+            3
         ],
         "matchs": 2,
         "elemento_casilla": 0,
-        "ayuda": false,
+        "ayuda ": false,
         "color": "DarkPurple2",
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
