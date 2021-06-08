@@ -9,7 +9,7 @@ def start():
     return x, z
 def loop():
     t = "Cantidad de casillas"
-    tx = "Introduzca 1 número para elevarlo al cuadrado y crear el tablero del nivel 2"
+    tx = "Introduzca un número de casillas para el nivel 2"
     b = "Actualizar"
     window = introduzca_texto.build(tx, b, t)
 
@@ -22,7 +22,6 @@ def loop():
             text_input = values[0]
             try:
                 x = int(text_input)
-                sg.popup("Seteaste la cantidad de casillas del nivel 2 en:", x*x)
                 z = cant_casillas3.start()
                 break
             except:
