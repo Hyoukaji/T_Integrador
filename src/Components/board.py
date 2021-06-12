@@ -21,12 +21,13 @@ def loop():
     jugador = get_jugador_actual.start()
     #t_limite = jugador[nick]["tiempo"]
     nick = get_nick_actual.start()
-    #board_data = crear_board_data.start()
+    board_data = crear_board_data.start()
 
     window = board.build(nick)
 
     while True:
         #n_partida = set_n_partida()
+        criterio = 1
 
         event, _values = window.read()
 
@@ -43,5 +44,6 @@ def loop():
             print (f"celda: {x},{y}")
             z = int(x)
             v = int(y)
+            window[f"cell-{x}-{y}"].update(board_data[z][v][criterio])
 
     return window

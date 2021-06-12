@@ -7,6 +7,7 @@ from src.Components import inicio_sesion
 from src.Handlers import colorear
 from src.Handlers import actualizar_jugador
 from src.Handlers import print_criterio
+import random
 
 def start():
     ok = False

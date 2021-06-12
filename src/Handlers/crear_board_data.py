@@ -1,11 +1,17 @@
 from src.Handlers import dar_logica
+import random
 
 #Datos de cada casilla del tablero
 
 def start():
-    casilla = False
-    board_data = {"casilla" : casilla, "criterio" : "criterio", "mask" : "x", "set" : False}
-    matriz = [[board_data] * 3 ] * 2
-    matriz = dar_logica.start(matriz)
+    criterio = "criterio"
+    mask = "x"
+    matriz = []
+    for i in range(2):
+        a = []
+        for y in range (3):
+            a.append([False,criterio,mask])
+        matriz.append(a)
 
+    matriz = dar_logica.start(matriz)
     return matriz
