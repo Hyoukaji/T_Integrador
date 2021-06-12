@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 import time
 from src.Windows import board
 from src.Components import salir_partida
+from src.Components import selec_nivel
 from src.Handlers import crear_board_data
 from src.Handlers import get_jugador_actual
 from src.Handlers import get_nick_actual
@@ -21,9 +22,10 @@ def loop():
     jugador = get_jugador_actual.start()
     #t_limite = jugador[nick]["tiempo"]
     nick = get_nick_actual.start()
-    board_data = crear_board_data.start()
+    n = selec_nivel.start()
+    board_data = crear_board_data.start(n)
 
-    window = board.build(nick)
+    window = board.build(nick,n)
 
     while True:
         #n_partida = set_n_partida()

@@ -3,15 +3,15 @@ import random
 
 #Datos de cada casilla del tablero
 
-def start():
+def start(c):
     criterio = "criterio"
     mask = "x"
     matriz = []
     for i in range(2):
         a = []
-        for y in range (3):
+        for y in range (c):
             a.append([False,criterio,mask])
         matriz.append(a)
 
-    matriz = dar_logica.start(matriz)
+    matriz = dar_logica.start(matriz,c)
     return matriz
