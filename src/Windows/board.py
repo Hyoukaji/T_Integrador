@@ -2,10 +2,11 @@ import PySimpleGUI as sg
 #Creador de tableros
 
 def build(player1_name,n):
+    N = str(n)
     layout = [
         [sg.Text("Jugador1: " + player1_name, key="-P1-", text_color="Red")],
         [sg.Text("Elementos encontrados: 0", key="-elem-", text_color="Blue")],
-        [sg.Text("Total: " + "3", key="-total-", text_color="White")],
+        [sg.Text("Total: " + N, key="-total-", text_color="White")],
         [sg.Text("")]
     ]
     #Aca las celdas para hacer las coincidencias

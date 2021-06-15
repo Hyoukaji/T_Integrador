@@ -26,10 +26,15 @@ def loop():
     board_data = crear_board_data.start(n)
 
     window = board.build(nick,n)
+    ok = False
+    cont = 0
 
     while True:
         #n_partida = set_n_partida()
+        mask = 2
         criterio = 1
+        casilla = 0
+
 
         event, _values = window.read()
 
@@ -46,6 +51,43 @@ def loop():
             print (f"celda: {x},{y}")
             z = int(x)
             v = int(y)
-            window[f"cell-{x}-{y}"].update(board_data[z][v][criterio])
+            if  board_data[z][v][mask] == "x":
+                board_data[z][v][mask] = board_data[z][v][criterio]
+                window[f"cell-{x}-{y}"].update(board_data[z][v][criterio])
+                window[f"cell-{x}-{y}"].update(disabled=True)
+
+                if ok:
+                    print("entrando al if ok")
+                    if board_data[z][v][criterio] == board_data[j][k][criterio]:
+                        print("entrando a comparar casillas")
+                        cont += 1
+                        sg.popup("Hiciste un punto!!!")
+                        ok = False
+                        c = str(cont)
+                        window["-elem-"].update("Elementos encontrados:" + c )
+                        board_data[z][v][casilla] = True
+                        board_data[j][k][casilla] = True
+                        if cont == n:
+                            sg.popup("GANASTEEE!!")
+                            break
+
+                    else:
+                        print("no son iguales")
+                        ok = False
+                        sg.popup("intenta denuevo")
+                        window[f"cell-{x}-{y}"].update(disabled=False)
+                        window[f"cell-{g}-{i}"].update(disabled=False)
+                        board_data[z][v][mask] = "x"
+                        board_data[j][k][mask] = "x"
+                        window[f"cell-{x}-{y}"].update(board_data[z][v][mask])
+                        window[f"cell-{g}-{i}"].update(board_data[j][k][mask])
+                else:
+                    print("no habia una casilla previamente selecc")
+                    ok = True
+                    j = z
+                    k = v
+                    g = str(j)
+                    i = str(k)
+
 
     return window
