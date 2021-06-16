@@ -25,14 +25,11 @@ def loop():
         if event == "-ganar-":
             text_input = introduzca_textoG.start()
             set_text_ganar.start(text_input)
-            sg.popup("Seteaste el texto al ganar en:" + text_input)
         if event == "-perder-":
             text_input = introduzca_textoG.start()
             set_text_perder.start(text_input)
-            sg.popup("Seteaste el texto al perder en:" + text_input)
         if event == "-pocoT-":
             text_input = introduzca_textoG.start()
             set_text_pocoT.start(text_input)
-            sg.popup("Seteaste el texto al quedar poco tiempo en:" + text_input)
 
     return window

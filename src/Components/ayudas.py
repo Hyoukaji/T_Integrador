@@ -21,11 +21,9 @@ def loop():
         if event == "-a-":
             ok = True
             set_ayudas.start(ok)
-            sg.popup("Ayudas activadas")
             break
         if event == "-b-":
             ok = False
             set_ayudas.start(ok)
-            sg.popup("Ayudas desactivadas")
             break
     return window
