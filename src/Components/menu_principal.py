@@ -30,7 +30,7 @@ def loop(okp):
 
         if event == "-play-":
             if okp :
-                print_criterio.start()
+                #print_criterio.start()
                 window.hide()
                 board.start()
                 window.un_hide()

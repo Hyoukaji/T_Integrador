@@ -19,12 +19,10 @@ def loop():
         if event == "-a-":
             color = "DarkPurple2"
             set_color.start(color)
-            sg.popup('Seteaste el color en:', color)
             break
         if event == "-b-":
             color = "DarkBrown4"
             set_color.start(color)
-            sg.popup('Seteaste el color en:', color)
             break
 
     return window

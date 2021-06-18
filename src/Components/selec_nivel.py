@@ -22,7 +22,7 @@ def loop():
             n = 4
             break
         if event == "-c-":
-            n = 5
+            n = 6
             break
 
     return window, n

@@ -25,7 +25,6 @@ def loop():
             try:
                 x = int(text_input)
                 set_matchs.start(x)
-                sg.popup("Seteaste la cantidad de coincidencias en :", x)
                 break
             except:
                 sg.popup("Tienes que ingresar un número entero")
