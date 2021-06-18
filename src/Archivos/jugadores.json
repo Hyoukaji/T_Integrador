@@ -14,8 +14,10 @@
         "ayuda ": false,
         "color": "DarkPurple2",
         "text_ganar": "Ganaste",
-        "text_perder": "Perdiste",
-        "text_pocoT ": "Te queda poco tiempo D:"
+        "text_perder": "Perdiste u-u",
+        "text_pocoT ": "Te queda poco tiempo D:",
+        "text_pocoT": " ",
+        "ayuda": false
     },
     "lala": {
         "genero": "mujer",
