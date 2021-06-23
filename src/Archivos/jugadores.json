@@ -12,20 +12,11 @@
         "matchs": 8,
         "elemento_casilla": 0,
         "ayuda ": false,
-<<<<<<< HEAD
-        "color": "DarkPurple2",
-        "text_ganar": "Ganaste",
-        "text_perder": "Perdiste u-u",
-        "text_pocoT ": "Te queda poco tiempo D:",
-        "text_pocoT": " ",
-        "ayuda": false
-=======
         "color": "DarkBrown4",
         "text_ganar": "gane",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:",
         "ayuda": true
->>>>>>> c12b91440f5b6e8b0526ede532023e19d42a8869
     },
     "lala": {
         "genero": "mujer",
@@ -44,5 +35,23 @@
         "text_ganar": "Ganaste",
         "text_perder": "Perdiste",
         "text_pocoT ": "Te queda poco tiempo D:"
+    },
+    "elena": {
+        "genero": "mujer",
+        "edad": 45,
+        "puntos": 0,
+        "tiempo": 180,
+        "cant_casillas": [
+            2,
+            4,
+            6
+        ],
+        "matchs": 2,
+        "elemento_casilla": 0,
+        "ayuda": false,
+        "color": "DarkBrown4",
+        "text_ganar": "Ganaste",
+        "text_perder": "Perdiste",
+        "text_pocoT": "Te queda poco tiempo D:"
     }
 }

@@ -1,0 +1,24 @@
+Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabra,nivel
+17:56:58,1,4,inicio_partida,elena,mujer,45,,,medio
+00 : 05,1,4,intento,elena,mujer,45,fallido,Mike,medio
+00 : 08,1,4,intento,elena,mujer,45,match,Julio,medio
+00 : 12,1,4,intento,elena,mujer,45,fallido,Darius,medio
+00 : 14,1,4,intento,elena,mujer,45,match,Darius,medio
+00 : 17,1,4,intento,elena,mujer,45,match,Kurt,medio
+00 : 20,1,4,intento,elena,mujer,45,match,Mike,medio
+17:57:19,1,4,fin,elena,mujer,45,finalizada,,medio
+17:57:58,2,4,inicio_partida,kevin,masculino,19,,,medio
+00 : 05,2,4,intento,kevin,masculino,19,match,Mike,medio
+00 : 08,2,4,intento,kevin,masculino,19,fallido,Darius,medio
+00 : 12,2,4,intento,kevin,masculino,19,match,Julio,medio
+00 : 15,2,4,intento,kevin,masculino,19,fallido,Darius,medio
+00 : 19,2,4,intento,kevin,masculino,19,match,Darius,medio
+00 : 23,2,4,intento,kevin,masculino,19,match,Kurt,medio
+17:58:22,2,4,fin,kevin,masculino,19,finalizada,,medio
+17:58:42,3,3,inicio_partida,lala,mujer,21,,,facil
+00 : 04,3,3,intento,lala,mujer,21,fallido,Julio,facil
+00 : 07,3,3,intento,lala,mujer,21,fallido,Mike,facil
+00 : 10,3,3,intento,lala,mujer,21,match,Kurt,facil
+00 : 14,3,3,intento,lala,mujer,21,match,Julio,facil
+00 : 17,3,3,intento,lala,mujer,21,match,Mike,facil
+17:59:00,3,3,fin,lala,mujer,21,finalizada,,facil

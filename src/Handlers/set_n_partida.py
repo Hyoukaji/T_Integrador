@@ -1,4 +1,4 @@
-import pandas as pd
+import csv
 import os
 import os.path
 
@@ -7,9 +7,14 @@ def start ():
     ruta_archivo = os.path.join("src/Archivos/", nom_arch)
     try:
         if os.path.exists(ruta_archivo):
-            data_frame = pd.read_csv(ruta_archivo)
-            cant = data_frame.tail(1)['Partida']
-            return cant
+            with open(ruta_archivo, "r") as file:
+                reader = csv.reader(file)
+                filas = file.read().splitlines()
+                ult_fila = (filas[-2]).split(',')
+                if ult_fila[7] == 'finalizada' or ult_fila[7] == 'fin' or ult_fila[7] == 'timeout' :
+                    return int(ult_fila[1]) + 1
+                else:
+                    return int(ult_fila[1])
         else:
             return 1
     except FileNotFoundError:
