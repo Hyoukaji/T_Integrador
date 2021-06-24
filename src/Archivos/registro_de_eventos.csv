@@ -22,3 +22,15 @@ Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabr
 00 : 14,3,3,intento,lala,mujer,21,match,Julio,facil
 00 : 17,3,3,intento,lala,mujer,21,match,Mike,facil
 17:59:00,3,3,fin,lala,mujer,21,finalizada,,facil
+11:27:11,4,4,inicio_partida,kevin,masculino,19,,,medio
+00 : 11,4,4,intento,kevin,masculino,19,fallido,Julio,medio
+00 : 15,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
+00 : 19,4,4,intento,kevin,masculino,19,fallido,Darius,medio
+00 : 26,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
+00 : 32,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
+01 : 06,4,4,intento,kevin,masculino,19,match,Julio,medio
+01 : 25,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
+01 : 28,4,4,intento,kevin,masculino,19,match,Darius,medio
+01 : 31,4,4,intento,kevin,masculino,19,match,Kurt,medio
+01 : 35,4,4,intento,kevin,masculino,19,match,Mike,medio
+11:28:48,4,4,fin,kevin,masculino,19,finalizada,,medio
