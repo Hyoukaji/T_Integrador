@@ -5,7 +5,13 @@ from src.Windows import  imagen
 
 
 
+<<<<<<< HEAD
+
+
+def start(n):
+=======
 def start():
+>>>>>>> refs/remotes/origin/main
 
     window = loop()
     window.close()
@@ -14,7 +20,7 @@ def start():
 def loop():
 
 
-    window = imagen.build()
+    window = imagen.build(n)
 
 
     while True:
