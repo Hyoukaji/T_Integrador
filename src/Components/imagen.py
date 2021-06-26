@@ -7,7 +7,7 @@ from src.Windows import  imagen
 
 
 
-def start():
+def start(n):
 
     window = loop()
     window.close()
@@ -16,7 +16,7 @@ def start():
 def loop():
 
 
-    window = imagen.build()
+    window = imagen.build(n)
 
 
     while True:
