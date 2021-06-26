@@ -6,7 +6,7 @@ Los elementos que serán parte del juego se seleccionarán en función del horar
 
 Para correr el juego hay que ejecutar el archivo que se llama run.py
 
-Se requiere tener instalado el paquete de PySimpleGUI
+Se requiere tener instalado el paquete de PySimpleGUI, pandas y matplotlib
 
 Nombres de los desarrolladores:
 
