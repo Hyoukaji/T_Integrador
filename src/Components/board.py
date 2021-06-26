@@ -9,6 +9,7 @@ from src.Handlers import get_nick_actual
 from src.Handlers import set_evento
 from src.Handlers import set_n_partida
 from src.Handlers import registro_eventos
+from src.Handlers import set_puntos
 
 #Abrimos el tablero del juego
 
@@ -52,11 +53,13 @@ def loop():
         event, _values = window.read()
 
         if event in (sg.WINDOW_CLOSED, "-exit-"):
-            #oks = salir_partida()
-            #if oks
-                #hora = time.strftime("%H:%M:%S")
-                #set_evento(hora,n_partida,"fin","sin terminar","",L)
-                #break
+            oks = salir_partida()
+            if oks:
+                hora = time.strftime("%H:%M:%S")
+                n_partida = set_n_partida.start()
+                evento = set_evento(hora,n_partida,"fin","sin terminar","",L)
+                registro_eventos.start(evento)
+                break
             break
 
 
@@ -74,10 +77,12 @@ def loop():
                     if board_data[z][v][criterio] == board_data[j][k][criterio]:
                         cont += 1
                         sg.popup("Hiciste un punto!!!")
+                        set_puntos.start()
                         current_time = time.time() - start_time
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
+                        hora = time.strftime("%H:%M:%S")
                         n_partida = set_n_partida.start()
-                        evento = set_evento.start(crono,n_partida,"intento","match",board_data[j][k][criterio],L)
+                        evento = set_evento.start(hora,n_partida,"intento","match",board_data[j][k][criterio],L)
                         registro_eventos.start(evento)
                         ok = False
                         c = str(cont)
@@ -99,7 +104,8 @@ def loop():
                         current_time = time.time() - start_time
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
                         n_partida = set_n_partida.start()
-                        evento = set_evento.start(crono,n_partida,"intento","fallido",board_data[j][k][criterio],L)
+                        hora = time.strftime("%H:%M:%S")
+                        evento = set_evento.start(hora,n_partida,"intento","fallido",board_data[j][k][criterio],L)
                         registro_eventos.start(evento)
                         window[f"cell-{x}-{y}"].update(disabled=False)
                         window[f"cell-{g}-{i}"].update(disabled=False)

@@ -5,8 +5,6 @@ from src.Windows import  imagen
 
 
 
-
-
 def start():
 
     window = loop()
