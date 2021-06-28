@@ -5,9 +5,13 @@ from src.Components import login_register
 from src.Components import settings
 from src.Components import inicio_sesion
 from src.Components import imagen
+from src.Components import selec_nivel
+#from src.Components import score
+#from src.Components import stats
 from src.Handlers import colorear
 from src.Handlers import actualizar_jugador
 from src.Handlers import print_criterio
+
 import random
 
 def start():
@@ -33,7 +37,11 @@ def loop(okp):
             if okp :
                 #print_criterio.start()
                 window.hide()
-                board.start()
+                n, play = selec_nivel.start()
+                if play:
+                    board.start(n)
+                else:
+                    sg.popup("Tienes que seleccionar un nivel para poder jugar")
                 window.un_hide()
             else:
                 sg.popup("Tienes que estar logueado para jugar")
@@ -52,10 +60,12 @@ def loop(okp):
                 sg.popup("Tienes que estar logueado para configurar")
         if event == "-score-":
             window.hide()
+            #score.start()
             imagen.start()
             window.un_hide()
         if event == "-stats-":
             window.hide()
+            #stats.start()
             imagen.start()
             window.un_hide()
     return window
