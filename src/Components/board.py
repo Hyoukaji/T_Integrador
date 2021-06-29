@@ -5,14 +5,10 @@ from src.Components import salir_partida
 from src.Handlers import crear_board_data
 from src.Handlers import get_jugador_actual
 from src.Handlers import get_nick_actual
-#from src.Handlers import set_puntajes
-#from src.Handlers import set_evento
-#from src.Handlers import set_n_partida
+from src.Handlers import set_puntajes
 from src.Handlers import set_evento
 from src.Handlers import set_n_partida
 from src.Handlers import registro_eventos
-from src.Handlers import set_puntos
-
 #Abrimos el tablero del juego
 
 
@@ -42,23 +38,17 @@ def loop(n):
     ok = False
     cont = 0
 
-    #n_partida = set_n_partida.start()
+    n_partida = set_n_partida.start()
     mask = 2
     criterio = 1
     casilla = 0
     Tout = 0
-    window = board.build(nick,n,m)
-    #n_partida = set_n_partida.start()
     hora = time.strftime("%H:%M:%S")
     #evento = set_evento.start(hora,n_partida,"inicio_partida","","",L)
     #registro_eventos.start(evento)
     start_time = time.time()
     window = board.build(nick,n,m)
     while True:
-        mask = 2
-        criterio = 1
-        casilla = 0
-
         event, _values = window.read(timeout=1000)
         if Tout == 180:
             break
@@ -87,7 +77,6 @@ def loop(n):
                     if board_data[z][v][criterio] == board_data[j][k][criterio]:
                         puntos += 1
                         cont += 1
-                        #set_puntajes.start(get_nick_actual,n,puntos)
                         current_time = time.time() - start_time
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
                         hora = time.strftime("%H:%M:%S")
@@ -100,7 +89,7 @@ def loop(n):
                         board_data[z][v][casilla] = True
                         board_data[j][k][casilla] = True
                         if cont == n:
-                            #set_puntajes.start(get_nick_actual,n,puntos)
+                            set_puntajes.start(get_nick_actual.start(),L,puntos)
                             k = True
                             hora = time.strftime("%H:%M:%S")
                             #n_partida = set_n_partida.start()

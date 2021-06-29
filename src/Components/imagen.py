@@ -1,11 +1,8 @@
-
-
 import PySimpleGUI as sg
 from src.Windows import  imagen
 
 
 def start(n):
-
     window = loop()
     window.close()
 
