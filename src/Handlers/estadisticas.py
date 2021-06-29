@@ -5,7 +5,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 #%matplotlib inline
 
-def star_1 ():
+def start_1 ():
     nom_arch = "registro_de_eventos"
     ruta_archivo = os.path.join("src/Archivos/", nom_arch)
     try:
@@ -36,3 +36,51 @@ def star_1 ():
 
     except FileNotFoundError:
         print("La ruta esta rota")
+
+def start_2():
+    nom_arch = "grafico_2.png"
+    ruta_archivo = os.path.join("src/Archivos/", nom_arch)
+
+    #Gráfico que muestre el porcentaje de partidas por estado (terminada, cancelada,abandonadas).
+    df = pd.read_csv("registro_de_eventos")
+    df['Palabra'].fillna('Sin datos', inplace = True)
+    df['Estado'].fillna('Sin datos', inplace = True)
+    df = df[((df['Nombre evento']=='fin')|(df['Nombre evento']=="sin terminar"))|(df['Nombre evento']=='"sin terminar"')]
+    data = df.groupby(['Partida', 'Nombre evento'])['Partida'].count()
+
+    #Grafico
+
+    etiquetas = data.keys()
+    datos = data.values
+    plt.pie(datos, labels=etiquetas, autopct='%1.1f%%',
+    shadow=True, startangle=90, labeldistance= 1.1)
+    plt.axis('equal')
+    plt.legend(etiquetas)
+    plt.title(f'Porcentaje de partidas por estado')
+    plt.savefig(ruta_archivo, format = 'png')
+    plt.show()
+
+def start_3():
+    nom_arch = "grafico_3.png"
+    ruta_archivo = os.path.join("src/Archivos/", nom_arch)
+
+    #Gráfico que muestre el porcentaje de partidas finalizadas según género
+
+    df = pd.read_csv("registro_de_eventos")
+    df['Palabra'].fillna('Sin datos', inplace = True)
+    df['Estado'].fillna('Sin datos', inplace = True)
+    df = df[df['Estado']=='finalizada']
+    data = df.groupby(['genero', 'Estado'])['genero'].count()
+
+    #Grafico
+
+    etiquetas = data.keys()
+    datos = data.values
+    plt.pie(datos, labels=etiquetas, autopct='%1.1f%%',
+    shadow=True, startangle=90, labeldistance= 1.1)
+    plt.axis('equal')
+    plt.legend(etiquetas)
+    plt.title(f'Porcentaje de partidas finalizadas por genero')
+    plt.savefig(ruta_archivo, format = 'png')
+    plt.show()
+    
