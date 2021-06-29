@@ -20,14 +20,14 @@ def start_1 ():
             dicci = {}
             for i in partidas:
                 dicci[i] = False
-    
+
             #filtro el data frame
             df_intentos=df[df['Estado']=='match']
 
             #Creo una tabla con las primeras palabras halladas por partida
             tabla = pd.DataFrame(columns=['Partida', 'Palabra'])
             for i in df_intentos.index:
-                num = df_intentos["Partida"][i] 
+                num = df_intentos["Partida"][i]
                 if dicci[num] == False:
                     tabla.loc[i] = [num] + [df_intentos['Palabra'][i]]
                     dicci[num] = True
