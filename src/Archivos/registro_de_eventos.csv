@@ -78,3 +78,6 @@ Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabr
 22:53:13,2,4,intento,zeus,dios,100,match,Darius,medio
 22:53:15,2,4,intento,zeus,dios,100,match,Kurt,medio
 22:53:15,2,4,fin,zeus,dios,100,finalizada,,medio
+02:29:39,3,6,inicio_partida,lala,mujer,21,,,dificil
+02:29:45,3,6,intento,lala,mujer,21,fallido,Eren,dificil
+02:29:48,3,6,intento,lala,mujer,21,match,Julio,dificil
