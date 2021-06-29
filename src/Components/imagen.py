@@ -3,11 +3,11 @@ from src.Windows import  imagen
 
 
 def start(n):
-    window = loop()
+    window = loop(n)
     window.close()
 
 
-def loop():
+def loop(n):
 
 
     window = imagen.build(n)
