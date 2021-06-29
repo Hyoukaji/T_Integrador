@@ -6,8 +6,7 @@ from matplotlib import pyplot as plt
 from pandas.plotting import table 
 import dataframe_image as dfi
 
-
-nom_arch = "registro_de_eventos"
+nom_arch = "registro_de_eventos.csv"
 ruta_archivo = os.path.join("src/Archivos/", nom_arch)
 
 def start_1 ():
@@ -62,6 +61,7 @@ def start_2():
             plt.axis('equal')
             plt.legend(etiquetas)
             plt.title(f'Porcentaje de partidas por estado')
+            print ("VEAMOS")
             nom = "grafico_2.png"
             archivo = os.path.join("src/Archivos/", nom)
             plt.savefig(archivo, format = 'png')
