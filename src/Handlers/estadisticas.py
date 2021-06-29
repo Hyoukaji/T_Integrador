@@ -3,6 +3,7 @@ import os
 import os.path
 import pandas as pd
 from matplotlib import pyplot as plt
+from pandas.plotting import table 
 #%matplotlib inline
 
 def start_1 ():
@@ -30,7 +31,13 @@ def start_1 ():
                 if dicci[num] == False:
                     tabla.loc[i] = [num] + [df_intentos['Palabra'][i]]
                     dicci[num] = True
-            print(tabla)
+            ax = plt.subplot(111, frame_on=False) 
+            ax.xaxis.set_visible(False)  
+            ax.yaxis.set_visible(False)  
+            table(ax, tabla)
+            nom = 'tabla_de_estadistica.png'
+            archivo = os.path.join("src/Archivos/", nom)
+            plt.savefig(archivo)
         else:
             print("Ups! El registro de jugadas no se ha encontrado")
 
@@ -58,7 +65,7 @@ def start_2():
     plt.legend(etiquetas)
     plt.title(f'Porcentaje de partidas por estado')
     plt.savefig(ruta_archivo, format = 'png')
-    plt.show()
+    #plt.show()
 
 def start_3():
     nom_arch = "grafico_3.png"
@@ -82,5 +89,5 @@ def start_3():
     plt.legend(etiquetas)
     plt.title(f'Porcentaje de partidas finalizadas por genero')
     plt.savefig(ruta_archivo, format = 'png')
-    plt.show()
+    #plt.show()
     

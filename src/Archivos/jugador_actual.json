@@ -1,20 +1,21 @@
 {
-    "zeus": {
-        "genero": "dios",
-        "edad": 100,
+    "kevin": {
+        "genero": "masculino",
+        "edad": 19,
         "puntos": 0,
-        "tiempo": 180,
+        "tiempo": 55,
         "cant_casillas": [
-            2,
-            4,
-            6
+            9,
+            6,
+            2
         ],
-        "matchs": 2,
+        "matchs": 8,
         "elemento_casilla": 0,
-        "ayuda": false,
-        "color": "ninguno",
-        "text_ganar": "Ganaste",
+        "ayuda ": false,
+        "color": "DarkBrown4",
+        "text_ganar": "gane",
         "text_perder": "Perdiste",
-        "text_pocoT": "Te queda poco tiempo D:"
+        "text_pocoT ": "Te queda poco tiempo D:",
+        "ayuda": true
     }
 }
