@@ -14,6 +14,6 @@ def build(nom):
              key='Exit')]
     ]
 
-    board = sg.Window("Prueba imagen").Layout(layout)
+    board = sg.Window("Graphic").Layout(layout)
 
     return board
