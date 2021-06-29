@@ -109,7 +109,8 @@ def loop(n):
                             break
 
                     else:
-                        time.sleep(1)
+                        _event,_value = window.read(timeout = 10)
+                        time.sleep(2)
                         ok = False
                         current_time = time.time() - start_time
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
@@ -117,7 +118,6 @@ def loop(n):
                         hora = time.strftime("%H:%M:%S")
                         #evento = set_evento.start(hora,n_partida,"intento","fallido",board_data[j][k][criterio],L)
                         #registro_eventos.start(evento)
-                        time.sleep(3)
                         window[f"cell-{x}-{y}"].update(disabled=False)
                         window[f"cell-{g}-{i}"].update(disabled=False)
                         board_data[z][v][mask] = "x"
