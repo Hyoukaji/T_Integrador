@@ -68,3 +68,13 @@ Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabr
 22:09:10,1,4,intento,zeus,dios,100,match,Darius,medio
 22:09:12,1,4,intento,zeus,dios,100,match,Kurt,medio
 22:09:12,1,4,fin,zeus,dios,100,finalizada,,medio
+22:52:42,2,4,inicio_partida,zeus,dios,100,,,medio
+22:52:47,2,4,intento,zeus,dios,100,fallido,Kurt,medio
+22:52:48,2,4,intento,zeus,dios,100,match,Julio,medio
+22:52:53,2,4,intento,zeus,dios,100,fallido,Darius,medio
+22:52:55,2,4,intento,zeus,dios,100,match,Mike,medio
+22:53:00,2,4,intento,zeus,dios,100,fallido,Kurt,medio
+22:53:10,2,4,intento,zeus,dios,100,fallido,Kurt,medio
+22:53:13,2,4,intento,zeus,dios,100,match,Darius,medio
+22:53:15,2,4,intento,zeus,dios,100,match,Kurt,medio
+22:53:15,2,4,fin,zeus,dios,100,finalizada,,medio

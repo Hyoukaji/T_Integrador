@@ -3,7 +3,7 @@ import os
 import os.path
 
 def start ():
-    nom_arch = "registro_de_eventos"
+    nom_arch = "registro_de_eventos.csv"
     ruta_archivo = os.path.join("src/Archivos/", nom_arch)
     try:
         if os.path.exists(ruta_archivo):
