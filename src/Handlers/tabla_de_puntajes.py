@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 import os.path
-import matplotlib.pyplot as plt
-from pandas.plotting import table
+import matplotlib as plt
+from os import remove
 import dataframe_image as dfi
 
 
@@ -16,6 +16,8 @@ def start_1():
         df_1 = df[['Nick','Puntaje']].sort_values('Puntaje', ascending=False)
         nom = 'tabla_1.png'
         archivo = os.path.join("src/Archivos/", nom)
+        if os.path.exists(archivo): 
+            remove(archivo)
         df_styled = df_1.style.background_gradient()
         dfi.export(df_styled,archivo)
     else:
@@ -29,6 +31,8 @@ def start_2():
         data = pd.DataFrame(df_2)
         nom = 'tabla_2.png'
         archivo = os.path.join("src/Archivos/", nom)
+        if os.path.exists(archivo): 
+            remove(archivo)
         df_styled = data.style.background_gradient()
         dfi.export(df_styled,archivo)
     else:
@@ -42,6 +46,8 @@ def start_3():
         data = pd.DataFrame(df_3)
         nom = 'tabla_3.png'
         archivo = os.path.join("src/Archivos/", nom)
+        if os.path.exists(archivo): 
+            remove(archivo)
         df_styled = data.style.background_gradient()
         dfi.export(df_styled,archivo)
     else:
@@ -55,6 +61,8 @@ def start_4():
         data = pd.DataFrame(df_4)
         nom = 'tabla_4.png'
         archivo = os.path.join("src/Archivos/", nom)
+        if os.path.exists(archivo): 
+            remove(archivo)
         df_styled = data.style.background_gradient()
         dfi.export(df_styled,archivo)
     else:

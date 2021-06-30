@@ -2,8 +2,8 @@ import csv
 import os
 import os.path
 import pandas as pd
-from matplotlib import pyplot as plt
-from pandas.plotting import table 
+from matplotlib import pyplot as plt 
+from os import remove
 import dataframe_image as dfi
 
 nom_arch = "registro_de_eventos.csv"
@@ -32,9 +32,11 @@ def start_1 ():
                 if dicci[num] == False:
                     tabla.loc[i] = [num] + [df_intentos['Palabra'][i]]
                     dicci[num] = True
-            df_styled = tabla.style.background_gradient()
             nom = 'tabla_de_estadistica.png'
             archivo = os.path.join("src/Archivos/", nom)
+            if os.path.exists(archivo): 
+                remove(archivo)
+            df_styled = tabla.style.background_gradient()
             dfi.export(df_styled,archivo)
         else:
             print("Ups! El registro de jugadas no se ha encontrado")
@@ -64,6 +66,8 @@ def start_2():
             print ("VEAMOS")
             nom = "grafico_2.png"
             archivo = os.path.join("src/Archivos/", nom)
+            if os.path.exists(archivo): 
+                remove(archivo)
             plt.savefig(archivo, format = 'png')
             plt.show()
         else:
@@ -92,6 +96,8 @@ def start_3():
             plt.title(f'Porcentaje de partidas finalizadas por genero')
             nom = "grafico_3.png"
             archivo = os.path.join("src/Archivos/", nom)
+            if os.path.exists(archivo): 
+                remove(archivo)
             plt.savefig(archivo, format = 'png')
             plt.show()
         else:
