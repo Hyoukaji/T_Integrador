@@ -93,6 +93,9 @@ def loop(n):
                         window["-elem-"].update("Elementos encontrados:" + c )
                         board_data[z][v][casilla] = True
                         board_data[j][k][casilla] = True
+                        for i in range(u):
+                            for p in range(m):
+                                window[f"cell-{str(p)}-{str(i)}"].update(disabled=False)
                         if cont == n:
                             set_puntajes.start(get_nick_actual.start(),L,puntos)
                             k = True
