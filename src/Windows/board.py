@@ -9,6 +9,8 @@ def build(player1_name,n,m):
         [sg.Text("Jugador1: " + player1_name, key="-P1-", text_color="Red")],
         [sg.Text("Elementos encontrados: 0", key="-elem-", text_color="Black")],
         [sg.Text("Total: " + N, key="-total-", text_color="White")],
+        [sg.Text("00:00", key="-timer-", text_color="Green")],
+        [sg.Text("")],
         [sg.Text("")],
         [sg.Button("Salir", size=(4, 2), key="-exit-")]
     ]

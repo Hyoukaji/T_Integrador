@@ -1,104 +1,106 @@
-Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabra,nivel
-17:56:58,1,4,inicio_partida,elena,mujer,45,,,medio
-00 : 05,1,4,intento,elena,mujer,45,fallido,Mike,medio
-00 : 08,1,4,intento,elena,mujer,45,match,Julio,medio
-00 : 12,1,4,intento,elena,mujer,45,fallido,Darius,medio
-00 : 14,1,4,intento,elena,mujer,45,match,Darius,medio
-00 : 17,1,4,intento,elena,mujer,45,match,Kurt,medio
-00 : 20,1,4,intento,elena,mujer,45,match,Mike,medio
-17:57:19,1,4,fin,elena,mujer,45,finalizada,,medio
-17:57:58,2,4,inicio_partida,kevin,masculino,19,,,medio
-00 : 05,2,4,intento,kevin,masculino,19,match,Mike,medio
-00 : 08,2,4,intento,kevin,masculino,19,fallido,Darius,medio
-00 : 12,2,4,intento,kevin,masculino,19,match,Julio,medio
-00 : 15,2,4,intento,kevin,masculino,19,fallido,Darius,medio
-00 : 19,2,4,intento,kevin,masculino,19,match,Darius,medio
-00 : 23,2,4,intento,kevin,masculino,19,match,Kurt,medio
-17:58:22,2,4,fin,kevin,masculino,19,finalizada,,medio
-17:58:42,3,3,inicio_partida,lala,mujer,21,,,facil
-00 : 04,3,3,intento,lala,mujer,21,fallido,Julio,facil
-00 : 07,3,3,intento,lala,mujer,21,fallido,Mike,facil
-00 : 10,3,3,intento,lala,mujer,21,match,Kurt,facil
-00 : 14,3,3,intento,lala,mujer,21,match,Julio,facil
-00 : 17,3,3,intento,lala,mujer,21,match,Mike,facil
-17:59:00,3,3,fin,lala,mujer,21,finalizada,,facil
-11:27:11,4,4,inicio_partida,kevin,masculino,19,,,medio
-00 : 11,4,4,intento,kevin,masculino,19,fallido,Julio,medio
-00 : 15,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
-00 : 19,4,4,intento,kevin,masculino,19,fallido,Darius,medio
-00 : 26,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
-00 : 32,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
-01 : 06,4,4,intento,kevin,masculino,19,match,Julio,medio
-01 : 25,4,4,intento,kevin,masculino,19,fallido,Kurt,medio
-01 : 28,4,4,intento,kevin,masculino,19,match,Darius,medio
-01 : 31,4,4,intento,kevin,masculino,19,match,Kurt,medio
-01 : 35,4,4,intento,kevin,masculino,19,match,Mike,medio
-11:28:48,4,4,fin,kevin,masculino,19,finalizada,,medio
-04:31:54,1,6,inicio_partida,kevin,masculino,19,,,dificil
-04:31:57,1,6,intento,kevin,masculino,19,fallido,Kurt,dificil
-04:32:01,1,6,intento,kevin,masculino,19,fallido,Kyle,dificil
-04:32:04,1,6,intento,kevin,masculino,19,fallido,Julio,dificil
-04:32:07,1,6,intento,kevin,masculino,19,fallido,Darius,dificil
-04:32:10,1,6,intento,kevin,masculino,19,fallido,Mike,dificil
-04:32:12,1,6,intento,kevin,masculino,19,match,Kyle,dificil
-04:32:17,1,6,intento,kevin,masculino,19,match,Kurt,dificil
-04:32:22,1,6,intento,kevin,masculino,19,fallido,Eren,dificil
-04:32:25,1,6,intento,kevin,masculino,19,fallido,Julio,dificil
-04:32:27,1,6,intento,kevin,masculino,19,fallido,Darius,dificil
-04:32:30,1,6,intento,kevin,masculino,19,match,Julio,dificil
-04:32:36,1,6,intento,kevin,masculino,19,fallido,Mike,dificil
-04:32:38,1,6,intento,kevin,masculino,19,match,Mike,dificil
-04:32:44,1,6,intento,kevin,masculino,19,fallido,Eren,dificil
-04:32:45,1,6,intento,kevin,masculino,19,match,Eren,dificil
-04:32:47,1,6,intento,kevin,masculino,19,match,Darius,dificil
-04:32:47,1,6,fin,kevin,masculino,19,finalizada,,dificil
-04:33:00,1,3,inicio_partida,kevin,masculino,19,,,facil
-04:36:33,1,3,inicio_partida,kevin,masculino,19,,,facil
-04:36:35,1,3,intento,kevin,masculino,19,match,Julio,facil
-04:36:37,1,3,intento,kevin,masculino,19,match,Kurt,facil
-04:36:39,1,3,intento,kevin,masculino,19,match,Mike,facil
-04:36:39,1,3,fin,kevin,masculino,19,finalizada,,facil
-22:05:57,1,3,inicio_partida,zeus,dios,100,,,facil
-22:08:53,1,4,inicio_partida,zeus,dios,100,,,medio
-22:08:57,1,4,intento,zeus,dios,100,fallido,Julio,medio
-22:09:00,1,4,intento,zeus,dios,100,fallido,Mike,medio
-22:09:02,1,4,intento,zeus,dios,100,match,Julio,medio
-22:09:05,1,4,intento,zeus,dios,100,fallido,Kurt,medio
-22:09:08,1,4,intento,zeus,dios,100,match,Mike,medio
-22:09:10,1,4,intento,zeus,dios,100,match,Darius,medio
-22:09:12,1,4,intento,zeus,dios,100,match,Kurt,medio
-22:09:12,1,4,fin,zeus,dios,100,finalizada,,medio
-22:52:42,2,4,inicio_partida,zeus,dios,100,,,medio
-22:52:47,2,4,intento,zeus,dios,100,fallido,Kurt,medio
-22:52:48,2,4,intento,zeus,dios,100,match,Julio,medio
-22:52:53,2,4,intento,zeus,dios,100,fallido,Darius,medio
-22:52:55,2,4,intento,zeus,dios,100,match,Mike,medio
-22:53:00,2,4,intento,zeus,dios,100,fallido,Kurt,medio
-22:53:10,2,4,intento,zeus,dios,100,fallido,Kurt,medio
-22:53:13,2,4,intento,zeus,dios,100,match,Darius,medio
-22:53:15,2,4,intento,zeus,dios,100,match,Kurt,medio
-22:53:15,2,4,fin,zeus,dios,100,finalizada,,medio
-02:29:39,3,6,inicio_partida,lala,mujer,21,,,dificil
-02:29:45,3,6,intento,lala,mujer,21,fallido,Eren,dificil
-02:29:48,3,6,intento,lala,mujer,21,match,Julio,dificil
-13:48:49,3,3,inicio_partida,kevin,masculino,19,,,facil
-13:48:53,3,3,intento,kevin,masculino,19,fallido,Mike,facil
-13:48:55,3,3,intento,kevin,masculino,19,match,Mike,facil
-13:56:02,3,3,inicio_partida,kevin,masculino,19,,,facil
-13:56:05,3,3,intento,kevin,masculino,19,fallido,Kurt,facil
-13:56:08,3,3,intento,kevin,masculino,19,match,Kurt,facil
-13:59:13,3,3,inicio_partida,kevin,masculino,19,,,facil
-13:59:15,3,3,intento,kevin,masculino,19,match,Mike,facil
-14:00:37,3,3,inicio_partida,kevin,masculino,19,,,facil
-14:00:43,3,3,intento,kevin,masculino,19,fallido,Mike,facil
-14:00:47,3,3,intento,kevin,masculino,19,fallido,Julio,facil
-14:00:48,3,3,intento,kevin,masculino,19,match,Mike,facil
-14:00:52,3,3,intento,kevin,masculino,19,fallido,Kurt,facil
-14:00:54,3,3,intento,kevin,masculino,19,match,Julio,facil
-14:00:56,3,3,intento,kevin,masculino,19,match,Kurt,facil
-14:00:56,3,3,fin,kevin,masculino,19,finalizada,,facil
-17:38:21,4,3,inicio_partida,kevin,masculino,19,,,facil
-17:38:31,4,3,intento,kevin,masculino,19,fallido,Julio,facil
-17:38:35,4,3,intento,kevin,masculino,19,match,Julio,facil
-17:38:47,4,3,intento,kevin,masculino,19,fallido,Kurt,facil
-17:38:52,4,3,intento,kevin,masculino,19,fallido,Kurt,facil
+Tiempo,Partida,Cantidad de palabras,Nombre evento,nick,genero,edad,Estado,Palabra,nivel
+12:23:14,1,6,inicio_partida,kevin,masculino,19,,,dificil
+12:40:20,1,6,inicio_partida,kevin,masculino,19,,,dificil
+12:40:24,1,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+12:40:27,1,6,intento,kevin,masculino,19,fallido,Darius,dificil
+12:40:31,1,6,intento,kevin,masculino,19,fallido,Mike,dificil
+12:40:39,1,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+12:40:41,1,6,intento,kevin,masculino,19,match,Kurt,dificil
+12:40:44,1,6,intento,kevin,masculino,19,fallido,Eren,dificil
+12:40:48,1,6,intento,kevin,masculino,19,fallido,Mike,dificil
+12:40:49,1,6,intento,kevin,masculino,19,match,Eren,dificil
+12:40:54,1,6,intento,kevin,masculino,19,fallido,Julio,dificil
+12:40:56,1,6,intento,kevin,masculino,19,match,Darius,dificil
+12:41:02,1,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+12:41:06,1,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+12:41:08,1,6,intento,kevin,masculino,19,match,Julio,dificil
+12:41:13,1,6,intento,kevin,masculino,19,match,Kyle,dificil
+12:41:16,1,6,intento,kevin,masculino,19,match,Mike,dificil
+12:41:16,1,6,fin,kevin,masculino,19,finalizada,,dificil
+02:17:07,2,6,inicio_partida,kevin,masculino,19,,,dificil
+02:17:19,2,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+02:17:28,2,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+02:17:30,2,6,intento,kevin,masculino,19,match,Kurt,dificil
+02:17:39,2,6,intento,kevin,masculino,19,fallido,Mike,dificil
+02:17:42,2,6,intento,kevin,masculino,19,fallido,Eren,dificil
+02:17:44,2,6,intento,kevin,masculino,19,match,Julio,dificil
+02:26:56,2,6,inicio_partida,kevin,masculino,19,,,dificil
+02:28:00,2,6,fin,kevin,masculino,19,timeout,,dificil
+02:29:16,3,6,inicio_partida,kevin,masculino,19,,,dificil
+02:29:26,3,6,fin,kevin,masculino,19,sin terminar,,dificil
+02:40:40,4,6,inicio_partida,kevin,masculino,19,,,dificil
+02:40:43,4,6,intento,kevin,masculino,19,match,Julio,dificil
+02:40:48,4,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+02:40:52,4,6,intento,kevin,masculino,19,fallido,Eren,dificil
+02:40:55,4,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+02:40:57,4,6,intento,kevin,masculino,19,match,Kyle,dificil
+02:41:00,4,6,intento,kevin,masculino,19,fallido,Mike,dificil
+02:41:04,4,6,intento,kevin,masculino,19,fallido,Eren,dificil
+02:41:06,4,6,intento,kevin,masculino,19,match,Darius,dificil
+02:41:10,4,6,intento,kevin,masculino,19,fallido,Mike,dificil
+02:41:12,4,6,intento,kevin,masculino,19,match,Mike,dificil
+02:41:16,4,6,intento,kevin,masculino,19,fallido,Eren,dificil
+02:41:18,4,6,intento,kevin,masculino,19,match,Eren,dificil
+02:41:20,4,6,intento,kevin,masculino,19,match,Kurt,dificil
+02:41:20,4,6,fin,kevin,masculino,19,finalizada,,dificil
+02:57:17,5,6,inicio_partida,kevin,masculino,19,,,dificil
+02:57:21,5,6,intento,kevin,masculino,19,fallido,Mike,dificil
+02:57:24,5,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+02:57:25,5,6,intento,kevin,masculino,19,match,Darius,dificil
+03:02:08,5,6,inicio_partida,kevin,masculino,19,,,dificil
+03:02:14,5,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:02:16,5,6,intento,kevin,masculino,19,match,Eren,dificil
+03:02:22,5,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+03:04:22,5,6,inicio_partida,kevin,masculino,19,,,dificil
+03:04:25,5,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:04:28,5,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+03:04:30,5,6,intento,kevin,masculino,19,match,Eren,dificil
+03:04:33,5,6,intento,kevin,masculino,19,fallido,Julio,dificil
+03:04:36,5,6,intento,kevin,masculino,19,match,Kyle,dificil
+03:04:38,5,6,intento,kevin,masculino,19,match,Kurt,dificil
+03:04:40,5,6,intento,kevin,masculino,19,match,Darius,dificil
+03:04:44,5,6,intento,kevin,masculino,19,fallido,Mike,dificil
+03:04:46,5,6,intento,kevin,masculino,19,match,Julio,dificil
+03:04:47,5,6,intento,kevin,masculino,19,match,Mike,dificil
+03:04:47,5,6,fin,kevin,masculino,19,finalizada,,dificil
+03:05:51,6,6,inicio_partida,kevin,masculino,19,,,dificil
+03:05:56,6,6,intento,kevin,masculino,19,fallido,Darius,dificil
+03:05:59,6,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:06:00,6,6,intento,kevin,masculino,19,match,Darius,dificil
+03:06:04,6,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+03:06:07,6,6,intento,kevin,masculino,19,match,Julio,dificil
+03:06:12,6,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:08:18,6,6,inicio_partida,kevin,masculino,19,,,dificil
+03:08:22,6,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+03:08:24,6,6,intento,kevin,masculino,19,match,Kyle,dificil
+03:08:28,6,6,intento,kevin,masculino,19,fallido,Mike,dificil
+03:14:41,6,6,inicio_partida,kevin,masculino,19,,,dificil
+03:14:46,6,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+03:14:49,6,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+03:14:52,6,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:14:55,6,6,intento,kevin,masculino,19,fallido,Mike,dificil
+03:14:56,6,6,intento,kevin,masculino,19,match,Darius,dificil
+03:15:00,6,6,intento,kevin,masculino,19,fallido,Julio,dificil
+03:15:01,6,6,intento,kevin,masculino,19,match,Kurt,dificil
+03:15:06,6,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:16:19,6,6,fin,kevin,masculino,19,timeout,,dificil
+03:22:59,7,6,inicio_partida,kevin,masculino,19,,,dificil
+03:23:04,7,6,intento,kevin,masculino,19,fallido,Mike,dificil
+03:23:07,7,6,intento,kevin,masculino,19,fallido,Darius,dificil
+03:23:10,7,6,intento,kevin,masculino,19,fallido,Julio,dificil
+03:23:11,7,6,intento,kevin,masculino,19,match,Kyle,dificil
+03:23:15,7,6,intento,kevin,masculino,19,fallido,Julio,dificil
+03:23:18,7,6,intento,kevin,masculino,19,fallido,Kurt,dificil
+03:23:20,7,6,intento,kevin,masculino,19,match,Kurt,dificil
+03:23:22,7,6,intento,kevin,masculino,19,match,Mike,dificil
+03:23:24,7,6,intento,kevin,masculino,19,match,Eren,dificil
+03:23:26,7,6,intento,kevin,masculino,19,match,Julio,dificil
+03:23:28,7,6,intento,kevin,masculino,19,match,Darius,dificil
+03:23:28,7,6,fin,kevin,masculino,19,finalizada,,dificil
+03:44:45,8,6,inicio_partida,kevin,masculino,19,,,dificil
+03:44:48,8,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:44:51,8,6,intento,kevin,masculino,19,fallido,Mike,dificil
+03:44:54,8,6,intento,kevin,masculino,19,fallido,Eren,dificil
+03:44:57,8,6,intento,kevin,masculino,19,fallido,Darius,dificil
+03:45:00,8,6,intento,kevin,masculino,19,fallido,Kyle,dificil
+03:45:01,8,6,fin,kevin,masculino,19,sin terminar,,dificil

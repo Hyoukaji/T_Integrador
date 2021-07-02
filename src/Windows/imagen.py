@@ -4,7 +4,6 @@ import os.path
 
 
 def build(nom):
-    #button_color=(sg.theme_background_color(),sg.theme_background_color()),border_width=0,
 
     nom_arch = nom
     ruta_archivo = os.path.join("src/Archivos/", nom_arch)

@@ -11,13 +11,19 @@ from src.Handlers import registro_eventos
 #Abrimos el tablero del juego
 
 def start(n):
-    n_partida = set_n_partida.start()
-    window, okk = loop(n)
+
+    window, okk, puntos = loop(n)
     window.close()
     if not okk:
-        #set_puntajes.start(get_nick_actual,L,puntos)
         sg.popup("Se te acabo el tiempo D:")
         hora = time.strftime("%H:%M:%S")
+        L = 1
+        if n == 4:
+            L = 2
+        elif n == 6:
+            L = 3
+        n_partida = set_n_partida.start()
+        set_puntajes.start(get_nick_actual.start(),L,puntos)
         evento = set_evento.start(hora,n_partida,"fin","timeout","",L)
         registro_eventos.start(evento)
 
@@ -31,7 +37,7 @@ def loop(n):
     u = n
     if n == 4:
         L = 2
-    if n == 6:
+    elif n == 6:
         m = 3
         L = 3
         u = 4
@@ -52,16 +58,18 @@ def loop(n):
 
 
         current_time = time.time() - start_time
+
+
         if round(current_time // 60) == 1:
             break
+
+
         if event in (sg.WINDOW_CLOSED, "-exit-"):
-            oks = salir_partida()
-            if oks:
-                hora = time.strftime("%H:%M:%S")
-                n_partida = set_n_partida.start()
-                evento = set_evento(hora,n_partida,"fin","sin terminar","",L)
-                registro_eventos.start(evento)
-                break
+            k = True
+            hora = time.strftime("%H:%M:%S")
+            n_partida = set_n_partida.start()
+            evento = set_evento.start(hora,n_partida,"fin","sin terminar","",L)
+            registro_eventos.start(evento)
             break
 
 
@@ -78,21 +86,21 @@ def loop(n):
                 if ok:
                     for i in range(u):
                         for p in range(m):
-                            window[f"cell-{str(p)}-{str(i)}"].update(disabled=False)
-                    if board_data[z][v][criterio] == board_data[j][k][criterio]:
+                            window[f"cell-{str(p)}-{str(i)}"].update(disabled=True)
+                    if board_data[z][v][criterio] == board_data[j][h][criterio]:
                         puntos += 1
                         cont += 1
                         current_time = time.time() - start_time
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
                         hora = time.strftime("%H:%M:%S")
                         n_partida = set_n_partida.start()
-                        evento = set_evento.start(hora,n_partida,"intento","match",board_data[j][k][criterio],L)
+                        evento = set_evento.start(hora,n_partida,"intento","match",board_data[j][h][criterio],L)
                         registro_eventos.start(evento)
                         ok = False
                         c = str(cont)
                         window["-elem-"].update("Elementos encontrados:" + c )
                         board_data[z][v][casilla] = True
-                        board_data[j][k][casilla] = True
+                        board_data[j][h][casilla] = True
                         for i in range(u):
                             for p in range(m):
                                 window[f"cell-{str(p)}-{str(i)}"].update(disabled=False)
@@ -116,22 +124,23 @@ def loop(n):
                         crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
                         n_partida = set_n_partida.start()
                         hora = time.strftime("%H:%M:%S")
-                        evento = set_evento.start(hora,n_partida,"intento","fallido",board_data[j][k][criterio],L)
+                        evento = set_evento.start(hora,n_partida,"intento","fallido",board_data[j][h][criterio],L)
                         registro_eventos.start(evento)
                         window[f"cell-{x}-{y}"].update(disabled=False)
-                        window[f"cell-{str(j)}-{str(k)}"].update(disabled=False)
+                        window[f"cell-{str(j)}-{str(h)}"].update(disabled=False)
                         board_data[z][v][mask] = "x"
-                        board_data[j][k][mask] = "x"
+                        board_data[j][h][mask] = "x"
                         window[f"cell-{x}-{y}"].update(board_data[z][v][mask])
-                        window[f"cell-{str(j)}-{str(k)}"].update(board_data[j][k][mask])
+                        window[f"cell-{str(j)}-{str(h)}"].update(board_data[j][h][mask])
                         for i in range(u):
                             for p in range(m):
                                 window[f"cell-{str(p)}-{str(i)}"].update(disabled=False)
                 else:
                     ok = True
                     j = z
-                    k = v
+                    h = v
         current_time = time.time() - start_time
-        crono = (f"{round(current_time // 60):02d} : {round(current_time % 60):02d}")
+        crono = (f"{round(current_time // 60):02d}:{round(current_time % 60):02d}")
+        window["-timer-"].update(crono)
         print(crono)
-    return window, k
+    return window, k, puntos

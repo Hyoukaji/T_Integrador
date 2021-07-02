@@ -10,8 +10,8 @@ def start ():
             with open(ruta_archivo, "r") as file:
                 reader = csv.reader(file)
                 filas = file.read().splitlines()
-                ult_fila = (filas[-2]).split(',')
-                if ult_fila[7] == 'finalizada' or ult_fila[7] == 'fin' or ult_fila[7] == 'timeout' :
+                ult_fila = (filas[-1]).split(',')
+                if ult_fila[7] == 'finalizada' or ult_fila[7] == 'sin terminar' or ult_fila[7] == 'timeout' :
                     return int(ult_fila[1]) + 1
                 else:
                     return int(ult_fila[1])

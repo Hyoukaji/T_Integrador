@@ -2,7 +2,7 @@ import csv
 import os
 import os.path
 import pandas as pd
-from matplotlib import pyplot as plt 
+from matplotlib import pyplot as plt
 from os import remove
 import dataframe_image as dfi
 
@@ -34,7 +34,7 @@ def start_1 ():
                     dicci[num] = True
             nom = 'tabla_de_estadistica.png'
             archivo = os.path.join("src/Archivos/", nom)
-            if os.path.exists(archivo): 
+            if os.path.exists(archivo):
                 remove(archivo)
             df_styled = tabla.style.background_gradient()
             dfi.export(df_styled,archivo)
@@ -51,7 +51,7 @@ def start_2():
             df = pd.read_csv(ruta_archivo)
             df['Palabra'].fillna('Sin datos', inplace = True)
             df['Estado'].fillna('Sin datos', inplace = True)
-            df = df[((df['Nombre evento']=='fin')|(df['Nombre evento']=="sin terminar"))|(df['Nombre evento']=='"sin terminar"')]
+            df = df[((df['Nombre evento']=='fin')|(df['Nombre evento']=="sin terminar"))|(df['Nombre evento']=='"timeout"')]
             data = df.groupby(['Partida', 'Nombre evento'])['Partida'].count()
 
             #Grafico
@@ -63,10 +63,9 @@ def start_2():
             plt.axis('equal')
             plt.legend(etiquetas)
             plt.title(f'Porcentaje de partidas por estado')
-            print ("VEAMOS")
             nom = "grafico_2.png"
             archivo = os.path.join("src/Archivos/", nom)
-            if os.path.exists(archivo): 
+            if os.path.exists(archivo):
                 remove(archivo)
             plt.savefig(archivo, format = 'png')
             plt.show()
@@ -96,7 +95,7 @@ def start_3():
             plt.title(f'Porcentaje de partidas finalizadas por genero')
             nom = "grafico_3.png"
             archivo = os.path.join("src/Archivos/", nom)
-            if os.path.exists(archivo): 
+            if os.path.exists(archivo):
                 remove(archivo)
             plt.savefig(archivo, format = 'png')
             plt.show()
@@ -104,4 +103,3 @@ def start_3():
             print("Ups! El .png no se ha encontrado")
     except FileNotFoundError:
         print("La ruta esta rota")
-    
